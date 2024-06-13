@@ -7,11 +7,19 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
+    extend:
+   {
+
+    colors:
+    {
+        tertiary:"#DC9B0F",
+        secondary:"#FFCD00",
+        darkbg:"#12252b"
+    },
+
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+          "gradient-cover":
+          "linear-gradient(90.21deg, rgba(0, 51, 102, 0.5) -5.92%, rgba(0, 102, 204, 0.5) 111.58%)",
       },
     },
   },
