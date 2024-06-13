@@ -62,30 +62,24 @@ export const dataAboutPage = [
         id: 1,
         title: "Diseñador Gráfico",
         subtitle: "Optica Vlentes",
-        description: "Creación de un logotipo único y memorable que refleje la identidad y los valores de Óptica Vlentes. Desarrollo de una identidad visual coherente y atractiva que destaque en el mercado. ",
-        date: "Nov 2023 ",
+        description: "Creación de un logotipo único y memorable que refleje la identidad de Óptica Vlentes. Desarrollo de una identidad visual coherente y atractiva que destaque en el mercado.Diseño de contenido visual impactante y dinámico para potenciar la presencia en redes sociales y atraer a más clientes. ",
+        date: "Nov 2022 ",
     },
     {
         id: 2,
         title: "Artista digital",
         subtitle: "CreativosCorpVzla ",
-        description: "T.",
+        description: "Movimiento artístico creado para aumentar la visibilidad de sus integrantes en 2020, consiguió financiamento regional.",
         date: "May 2021",
     },
     {
         id: 3,
-        title: "Especialista en Desarrollo Frontend",
-        subtitle: "CodeForge Solutions",
-        description: "Como desarrollador frontend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
+        title: "Diseño UI",
+        subtitle: "Angeles del Hogar cl",
+        description: "Diseño de interfaces visualmente atractivas y funcionales para una aplicación web eccomerce, colaborando con equipos de UX y desarrolladores. ",
         date: "Ago 2019",
     },
-    {
-        id: 4,
-        title: "Prácticas Grado",
-        subtitle: "WebWizards Inc.",
-        description: "Únete a nosotros mientras creamos sitios web y aplicaciones interactivas que sorprenden y deleitan a nuestros clientes. Si tienes pasión por el diseño y la programación, y disfrutas colaborar en un entorno creativo, ¡queremos conocerte!        ",
-        date: "Mar 2018",
-    },
+   
 ]
 
 export const dataCounter = [
@@ -105,7 +99,7 @@ export const dataCounter = [
     },
     {
         id: 2,
-        endCounter: 30,
+        endCounter: 6,
         text: "Proyectos finalizados",
         lineRight: true,
         lineRightMobile: true,
@@ -128,11 +122,6 @@ export const serviceData = [
         icon: <Computer />,
         title: "Desarrollo web",
         description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
-    },
-    {
-        icon: <Rocket />,
-        title: "SEO",
-        description: "Optimización de tu presencia en línea mediante estrategias de SEO avanzadas, ",
     },
 ];
 
@@ -198,44 +187,32 @@ export const dataPortfolio = [
 export const dataTestimonials = [
     {
         id: 1,
-        name: "George Snow",
+        name: "Marco Yanez",
         description:
-            "¡Increíble plataforma! Los testimonios aquí son genuinos y me han ayudado a tomar decisiones informadas. ¡Altamente recomendado!",
+            "Increíble trabajo el que realiza Leonel Delgado, fascinado desde el día 1 que lo contraté.",
         imageUrl: "/profile1.png",
     },
     {
         id: 2,
-        name: "Juan Pérez",
+        name: "Vanessa Rodriguez",
         description:
-            "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
+            "Desde el día 1 que comencé con mi empresa y contacté a Leonel mis problemas se fueron, encontró la identidad visual para mi empresa que tanto buscaba y realizó un trabajo impecable con mis redes sociales.",
         imageUrl: "/profile2.png",
     },
     {
         id: 3,
-        name: "María García",
+        name: "Felix García",
         description:
-            "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios. Me ha ayudado mucho en mis compras en línea. ¡Bravo por este sitio!",
+            "Desde el día 1 al ver la experiencia y creatividad de Leonel me decidí a trabajar con él. Luego de 2 meses me solucionó grandes problemas de diseño que mi página tenía",
         imageUrl: "/profile3.png",
     },
-    {
-        id: 4,
-        name: "Laura Snow",
-        description:
-            "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. Me siento más seguro al tomar decisiones después de leer las experiencias compartidas por otros usuarios.",
-        imageUrl: "/profile4.png",
-    },
+   
     {
         id: 5,
-        name: "Carlos Sánchez",
+        name: "Angel Fuentes",
         description:
-            "Una joya en la web. Los testimonios son fáciles de encontrar y están bien organizados. ¡Definitivamente mi destino número uno cuando necesito referencias confiables!",
+            "Una joya en la web. El diseño de la página era exactamente lo que necesitaba!",
         imageUrl: "/profile5.png",
     },
-    {
-        id: 6,
-        name: "Antonio Martínez",
-        description:
-            "¡Fantástico recurso para aquellos que buscan validación antes de tomar decisiones importantes! Los testimonios aquí son veraces y realmente útiles. ¡Gracias por simplificar mi proceso de toma de decisiones!",
-        imageUrl: "/profile6.png",
-    },
+  
 ];
