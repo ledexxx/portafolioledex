@@ -1,4 +1,4 @@
-import AvatarServices from "@/components/avatar-services";
+
 import SliderServices from "@/components/slider-services";
 import TransitionPage from "@/components/transition-page";
 
@@ -8,7 +8,7 @@ const ServicesPage = () => {
 
             <TransitionPage />
           
-            <AvatarServices />
+            
             <div className="grid items-center justify-center h-screen max-w-5xl gap-6 mx-auto md:grid-cols-2">
                 <div className="max-w-[450px]">
 

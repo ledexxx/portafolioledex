@@ -14,7 +14,7 @@ const PortfolioPage = () => {
     return (
         <ContainerPage>
             <TransitionPage />
-            <AvatarPortfolio />
+        
             <div className="flex flex-col justify-center h-full">
                 <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">Mis últimos <span className="font-bold text-secondary">trabajos realizados</span></h1>
 
