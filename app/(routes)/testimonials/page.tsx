@@ -46,7 +46,7 @@ const TestimonialsPage = () => {
                         </Swiper>
                     </div>
                 </div>
-                <div className="w-full h-full bg-no-repeat bg-gradient-cover">
+                <div className="w-full h-full ">
                     <CoverParticles />
                 </div>
             </div>
