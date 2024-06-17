@@ -7,10 +7,10 @@ import { MotionTransition } from "./transition-component";
 const Header = () => {
     return (
         <MotionTransition position="bottom" className="absolute z-40 inline-block w-full top-5 md:top-10">
-            <header className="mx-5 md:mx-10">
+            <header className="mx-5 my-7 md:mx-10">
                 <div className="container justify-between max-w-6xl mx-auto md:flex">
                     <Link href='/'>
-                        <img src="/favicon.ico" alt="LEDEX" className="my-3 h-10 text-center md:text-left" />
+                        <img src="/favicon.ico" alt="LEDEX" className="my-3 h-20 w-20 text-center md:text-left" />
                         
                     </Link>
                     <div className="flex items-center justify-center gap-7">
