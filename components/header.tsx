@@ -6,7 +6,7 @@ import { MotionTransition } from "./transition-component";
 
 const Header = () => {
     return (
-        <MotionTransition position="bottom" className="absolute z-40 inline-block w-full top-5 md:top-10">
+        <MotionTransition position="bottom" className="absolute z-40 inline-block w-full top-2 md:top-5">
             <header className="mx-5 mb-10 md:mx-10  md:mb-10 lg:mb-12">
                 <div className="container justify-between max-w-6xl mx-auto md:flex">
                     <Link href='/'>
