@@ -1,24 +1,24 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin,Figma, Rss, Crop, Pencil, Computer, Book, Rocket, Speech, Github } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin,Figma, FileDown, Crop, Pencil, Computer, Book, Rocket, Speech, Github } from "lucide-react";
 
 export const socialNetworks = [
     {
         id: 1,
         logo: <Figma size={30} strokeWidth={1} />,
-        src: "#!",
+        src: "https://www.behance.net/ledex_designs",
     },
     {
         id: 2,
         logo: <Linkedin size={30} strokeWidth={1} />,
-        src: "#!",
+        src: "https://www.linkedin.com/in/leonel-delgado-264784217/",
     },
     {
         id: 3,
         logo: <Github size={30} strokeWidth={1} />,
-        src: "#!",
+        src: "https://github.com/ledexxx",
     },
     {
         id: 4,
-        logo: <Rss size={30} strokeWidth={1} />,
+        logo: <FileDown size={30} strokeWidth={1} />,
         src: "#!",
     },
 ];

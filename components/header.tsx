@@ -13,7 +13,7 @@ const Header = () => {
                         <img src="/favicon.ico" alt="LEDEX logo" className="my-3 h-20 w-20 text-center md:text-left" />
                         
                     </Link>
-                    <div className="flex items-center justify-center gap-7">
+                    <div className="flex items-center justify-center gap-7 md:mx-10  md:mb-10 lg:mb-12">
                         {socialNetworks.map(({ logo, src, id }) => (
                             <Link
                                 key={id}
