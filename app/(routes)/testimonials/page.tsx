@@ -4,7 +4,6 @@ import Image from 'next/image';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import CoverParticles from '@/components/cover-particles';
-
 import { dataTestimonials } from '@/data';
 import TransitionPage from '@/components/transition-page';
 
@@ -12,8 +11,8 @@ const TestimonialsPage = () => {
     return (
         <>
             <TransitionPage />
-            <div className='flex flex-col items-center justify-center h-lvh'>
-              
+        
+            <div className='flex flex-col items-center justify-center h-lvh mt-20'>  {/* Añade margen superior */}
                 <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">
                     Algunos comentarios
                     <span className="block font-bold text-secondary"> de mis clientes</span>

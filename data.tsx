@@ -190,14 +190,14 @@ export const dataTestimonials = [
         name: "Marco Yanez",
         description:
             "Increíble trabajo el que realiza Leonel Delgado, fascinado desde el día 1 que lo contraté.",
-        imageUrl: "/profile1.jpeg",
+        imageUrl: "/profile1.jpg",
     },
     {
         id: 2,
         name: "Vanessa Rodriguez",
         description:
             "Desde el día 1 que comencé con mi empresa y contacté a Leonel mis problemas se fueron, encontró la identidad visual para mi empresa que tanto buscaba y realizó un trabajo impecable con mis redes sociales.",
-        imageUrl: "/profile2.png",
+        imageUrl: "/profile2.jpg",
     },
     {
         id: 3,
