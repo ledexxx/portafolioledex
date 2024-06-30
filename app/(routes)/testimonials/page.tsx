@@ -35,9 +35,9 @@ const TestimonialsPage = () => {
                         >
                             {dataTestimonials.map(({ id, name, description, imageUrl }) => (
                                 <SwiperSlide key={id} className="flex flex-col items-center">
-                                    <Image src={imageUrl} alt={name} width={100} height={100} className="rounded-full" />
-                                    <h4 className='text-center mt-3'>{name}</h4>
-                                    <div className="mt-2 text-center">
+                                    <Image src={imageUrl} alt={name} width={100} height={100} className="mx-auto rounded-full" />
+                                    <h4 className='text-center font-bold text-xl text-yellow-500' >{name}</h4>
+                                    <div className="mt-2 text-center ">
                                         {description}
                                     </div>
                                 </SwiperSlide>

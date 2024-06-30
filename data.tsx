@@ -190,7 +190,7 @@ export const dataTestimonials = [
         name: "Marco Yanez",
         description:
             "Increíble trabajo el que realiza Leonel Delgado, fascinado desde el día 1 que lo contraté.",
-        imageUrl: "/profile1.jpg",
+        imageUrl: "/profile1.png",
     },
     {
         id: 2,
