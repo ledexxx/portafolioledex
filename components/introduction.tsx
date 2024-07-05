@@ -27,7 +27,7 @@ const Introduction = () => {
                     </h1>
 
                     <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
-                      Como diseñador UX/UI me dedico a llevar a la realidad esa idea que tienes de forma elegante y funcional.
+                    Hola, soy Leonel Delgado, diseñador gráfico y desarrollador web. Transformo tus ideas en experiencias visuales cautivadoras. También estoy aprendiendo Java para ampliar mis habilidades técnicas. Explora mi trabajo y descubre cómo puedo ayudarte a dar vida a tus proyectos.
                     </p>
 
                     <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">
