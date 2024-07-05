@@ -11,7 +11,7 @@ const ServicesPage = () => {
                 <div className="max-w-[450px]">
 
                     <h1 className="text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-5">Mis <span className="font-bold text-secondary"> servicios.</span></h1>
-                    <p className="mb-3 text-xl text-gray-300">Ofrezco servicios especializados en diseño web frontend, enfocados en la creación de sitios web como también cualquier solución de diseño, cómo</p>
+                    <p className="mb-3 text-xl text-gray-300">Ofrezco servicios especializados en diseño web frontend, enfocados en la creación de sitios web como también cualquier solución de diseño especialmente material publicitario para impulsar tu marca</p>
                     <button className="px-3 py-2 rounded-lg bg-tertiary hover:bg-tertiary/65"><strong> Contactame</strong></button>
                 </div>
 

@@ -1,4 +1,4 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin,Figma, FileDown, Crop, Pencil, Computer, Book, Rocket, Speech, Github } from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin,Figma, FileDown, Crop, Pencil, Computer, Globe, Rocket, Speech, Github, Briefcase,} from "lucide-react";
 
 export const socialNetworks = [
     {
@@ -39,14 +39,14 @@ export const itemsNavbar = [
     },
     {
         id: 3,
-        title: "Book",
-        icon: <BookText size={25} color="#fff" strokeWidth={1} />,
+        title: "globe",
+        icon: <Globe size={25} color="#fff" strokeWidth={1} />,
         link: "/services",
     },
     {
         id: 4,
-        title: "Target",
-        icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
+        title: "briefcase",
+        icon: <Briefcase size={25} color="#fff" strokeWidth={1} />,
         link: "/portfolio",
     },
     {
@@ -128,28 +128,28 @@ export const serviceData = [
 export const dataPortfolio = [
     {
         id: 1,
-        title: "Web Pro",
-        image: "/image-1.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        title: "Ap Logistics",
+        image: "/image-1.png",
+        urlGithub: "https://github.com/ledexxx/ap-logistics",
+        urlDemo: "https://vercelaplogi.vercel.app/",
     },
     {
         id: 2,
-        title: "Desarrollo Web Ágil",
+        title: "Proyecto Jerald",
         image: "/image-2.jpg",
-        urlGithub: "#!",
+        urlGithub: "https://github.com/ledexxx/ProyectoJerald",
         urlDemo: "#!",
     },
     {
         id: 3,
-        title: "Estrategias Web",
+        title: "Futuralib",
         image: "/image-3.jpg",
         urlGithub: "#!",
         urlDemo: "#!",
     },
     {
         id: 4,
-        title: "Ideas Creativas",
+        title: "Tech News",
         image: "/image-4.jpg",
         urlGithub: "#!",
         urlDemo: "#!",
