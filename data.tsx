@@ -1,27 +1,33 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin,Figma, FileDown, Crop, Pencil, Computer, Globe, Rocket, Speech, Github, Briefcase,} from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, FileDown, Crop, Pencil, Computer, Globe, Rocket, Speech, Briefcase,} from "lucide-react";
+import { FaBehance, FaFileAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export const socialNetworks = [
     {
         id: 1,
-        logo: <Figma size={30} strokeWidth={1} />,
+        logo: <FaBehance size={30} />,
         src: "https://www.behance.net/ledex_designs",
+        title: "Mi perfil de behance",
     },
     {
         id: 2,
-        logo: <Linkedin size={30} strokeWidth={1} />,
+        logo: <FaLinkedin size={30} />,
         src: "https://www.linkedin.com/in/leonel-delgado-264784217/",
+        title: "Mi perfil de LinkedIn",
     },
     {
         id: 3,
-        logo: <Github size={30} strokeWidth={1} />,
+        logo: <FaGithub size={30} />,
         src: "https://github.com/ledexxx",
+        title: "Mi perfil de Github",
     },
     {
         id: 4,
-        logo: <FileDown size={30} strokeWidth={1} />,
+        logo: <FaFileAlt size={30} />,
         src: "#!",
+        title: "Descargar Currículum vitae",
     },
 ];
+
 
 
 export const itemsNavbar = [

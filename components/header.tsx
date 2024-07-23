@@ -3,6 +3,7 @@
 import { socialNetworks } from "@/data";
 import Link from "next/link";
 import { MotionTransition } from "./transition-component";
+import { title } from "process";
 
 const Header = () => {
     return (
@@ -13,11 +14,13 @@ const Header = () => {
                         <img src="/ledex.png" alt="LEDEX logo" className="my-3 h-16 w-16 md:h-20 md:w-20 text-center md:text-left" /> 
                     </Link>
                     <div className="flex items-center justify-center gap-4 mt-3 md:mt-0">
-                        {socialNetworks.map(({ logo, src, id }) => (
+                        {socialNetworks.map(({ logo, src, id,title }) => (
                             <Link
                                 key={id}
                                 href={src}
                                 target="_blank"
+                                title={title}
+                            
                                 className="transition-all duration-300 hover:text-secondary text-sm md:text-base" 
                             >
                                 {logo}
