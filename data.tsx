@@ -155,10 +155,10 @@ export const dataPortfolio = [
     },
     {
         id: 4,
-        title: "Tech News",
-        image: "/image-4.jpg",
+        title: "Popi floreria",
+        image: "/popi.png",
         urlGithub: "#!",
-        urlDemo: "#!",
+        urlDemo: "https://popifloreria.netlify.app",
     },
     {
         id: 5,
