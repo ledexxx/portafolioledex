@@ -4,9 +4,9 @@ import { TypeAnimation } from 'react-type-animation';
 const Introduction = () => {
     return (
         <div className="z-20 w-full bg-darkBg/60">
-            <div className="z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
+            <div className="z-20 grid items-center h-full p-6 pt-20 md:py-0 md:grid-cols-2 pb-28">
                 <Image src="/home-4.png" priority width="800" height="800" alt="Avatar" />
-                <div className="flex flex-col justify-center max-w-md">
+                <div className="flex flex-col justify-center max-w-md ">
                     <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Si tienes una idea, <br />
                         <TypeAnimation
                             sequence={[
@@ -30,7 +30,7 @@ const Introduction = () => {
                     Hola, soy Leonel Delgado, diseñador gráfico y desarrollador web. Transformo tus ideas en experiencias visuales cautivadoras. También estoy aprendiendo Java para ampliar mis habilidades técnicas. Explora mi trabajo y descubre cómo puedo ayudarte a dar vida a tus proyectos.
                     </p>
 
-                    <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">
+                    <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10 mb-28">
                         <a href="/projects" className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
                             Ver proyectos
                         </a>

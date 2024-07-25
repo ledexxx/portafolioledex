@@ -149,45 +149,18 @@ export const dataPortfolio = [
     {
         id: 3,
         title: "Futuralib",
-        image: "/image-3.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
+        image: "/futuralib.png",
+        urlGithub: "https://github.com/Gabyot/FuturaLib-1",
+        urlDemo: "https://www.canva.com/design/DAF23vLd18w/LaC7L7cHuEhYFtg5d05umQ/view?utm_content=DAF23vLd18w&utm_campaign=designshare&utm_medium=link&utm_source=editor",
     },
     {
         id: 4,
         title: "Popi floreria",
         image: "/popi.png",
-        urlGithub: "#!",
+        urlGithub: "https://github.com/ledexxx/sofiflowers",
         urlDemo: "https://popifloreria.netlify.app",
     },
-    {
-        id: 5,
-        title: "Webs Impactantes",
-        image: "/image-5.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 6,
-        title: "Web Dinámica",
-        image: "/image-6.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 7,
-        title: "Dark Web ",
-        image: "/image-7.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    },
-    {
-        id: 8,
-        title: "E-commerce web",
-        image: "/image-8.jpg",
-        urlGithub: "#!",
-        urlDemo: "#!",
-    }
+    
 ];
 
 export const dataTestimonials = [
