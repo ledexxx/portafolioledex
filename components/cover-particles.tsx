@@ -62,7 +62,7 @@ const CoverParticles = () =>{
                     color: "#ffffff",
                     distance: 150,
                     enable: true,
-                    opacity: 0.5,
+                    opacity: 0.2,
                     width: 1,
                 },
                 move: {
@@ -80,10 +80,10 @@ const CoverParticles = () =>{
                         enable: true,
                      
                     },
-                    value: 80,
+                    value: 40,
                 },
                 opacity: {
-                    value: 0.5,
+                    value: 0.2,
                 },
                 shape: {
                     type: "circle",
