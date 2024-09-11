@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import CoverParticles from '@/components/cover-particles';
 import { dataTestimonials } from '@/data';
 import TransitionPage from '@/components/transition-page';
 
@@ -46,7 +45,6 @@ const TestimonialsPage = () => {
                     </div>
                 </div>
                 <div className="w-full h-full ">
-                    <CoverParticles />
                 </div>
             </div>
         </>

@@ -68,14 +68,14 @@ export const dataAboutPage = [
         id: 1,
         title: "Diseñador Gráfico",
         subtitle: "Optica Vlentes",
-        description: "Creación de un logotipo único y memorable que refleje la identidad de Óptica Vlentes. Desarrollo de una identidad visual coherente y atractiva que destaque en el mercado.Diseño de contenido visual impactante y dinámico para potenciar la presencia en redes sociales y atraer a más clientes. ",
+        description: "Creación de un logotipo único y memorable que refleja la identidad de Óptica Vlentes. Desarrollo de una identidad visual coherente y atractiva que destaca en el mercado. Diseño de contenido visual impactante y dinámico para potenciar la presencia en redes sociales y atraer a más clientes. ",
         date: "Nov 2022 ",
     },
     {
         id: 2,
         title: "Artista digital",
         subtitle: "CreativosCorpVzla ",
-        description: "Movimiento artístico creado para aumentar la visibilidad de sus integrantes en 2020, consiguió financiamento regional.",
+        description: "Movimiento artístico creado para aumentar la visibilidad de sus integrantes en 2020, consiguió financiamento regional y luego se disolvió por decisión de los integrantes.",
         date: "May 2021",
     },
     {
