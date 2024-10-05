@@ -66,20 +66,27 @@ export const itemsNavbar = [
 export const dataAboutPage = [
     {
         id: 1,
+        title: "Desarrollador Front End",
+        subtitle: "May Dev Technologies",
+        description: "Genero desarrollo Front End para proyectos a medianas empresas ",
+        date: "Agosto 2024 - Actualidad ",
+    },
+    {
+        id: 2,
         title: "Diseñador Gráfico",
         subtitle: "Optica Vlentes",
         description: "Creación de un logotipo único y memorable que refleja la identidad de Óptica Vlentes. Desarrollo de una identidad visual coherente y atractiva que destaca en el mercado. Diseño de contenido visual impactante y dinámico para potenciar la presencia en redes sociales y atraer a más clientes. ",
         date: "Nov 2022 ",
     },
     {
-        id: 2,
+        id: 3,
         title: "Artista digital",
         subtitle: "CreativosCorpVzla ",
         description: "Movimiento artístico creado para aumentar la visibilidad de sus integrantes en 2020, consiguió financiamento regional y luego se disolvió por decisión de los integrantes.",
         date: "May 2021",
     },
     {
-        id: 3,
+        id: 4,
         title: "Diseño UI",
         subtitle: "Angeles del Hogar cl",
         description: "Diseño de interfaces visualmente atractivas y funcionales para una aplicación web eccomerce, colaborando con equipos de UX y desarrolladores. ",
@@ -141,10 +148,10 @@ export const dataPortfolio = [
     },
     {
         id: 2,
-        title: "Proyecto Jerald",
-        image: "/image-2.jpg",
-        urlGithub: "https://github.com/ledexxx/ProyectoJerald",
-        urlDemo: "#!",
+        title: "Menú Restaurant Atarashi",
+        image: "/Atarashi.png",
+        urlGithub: "https://github.com/ledexxx/menu_marco",
+        urlDemo: "https://atarashi-sushi-menu.vercel.app/",
     },
     {
         id: 3,
