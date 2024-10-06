@@ -69,7 +69,7 @@ export const dataAboutPage = [
         title: "Desarrollador Front End",
         subtitle: "May Dev Technologies",
         description: "Genero desarrollo Front End para proyectos a medianas empresas ",
-        date: "Agosto 2024 - Actualidad ",
+        date: "Agos 2024 ",
     },
     {
         id: 2,
@@ -149,7 +149,7 @@ export const dataPortfolio = [
     {
         id: 2,
         title: "Menú Restaurant Atarashi",
-        image: "/Atarashi.png",
+        image: "/atarashi.png",
         urlGithub: "https://github.com/ledexxx/menu_marco",
         urlDemo: "https://atarashi-sushi-menu.vercel.app/",
     },
