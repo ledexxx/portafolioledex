@@ -150,7 +150,7 @@ export const dataPortfolio = [
         id: 2,
         title: "Menú Restaurant Atarashi",
         image: "/atarashi.png",
-        urlGithub: "https://github.com/ledexxx/menu_marco",
+        urlGithub: "https://github.com/ledexxx/Atarashisushi",
         urlDemo: "https://atarashi-sushi-menu.vercel.app/",
     },
     {
