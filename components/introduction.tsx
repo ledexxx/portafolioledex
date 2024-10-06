@@ -27,7 +27,7 @@ const Introduction = () => {
                     </h1>
 
                     <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
-                    Hola, soy Leonel Delgado, diseñador gráfico y desarrollador FrontEnd. Transformo tus ideas en experiencias visuales cautivadoras. También estoy aprendiendo<span className="text-secondary">Java</span> para ampliar mis habilidades técnicas. Explora mi trabajo y descubre cómo puedo ayudarte a dar vida a tus proyectos.
+                    Hola, soy Leonel Delgado, diseñador gráfico y desarrollador FrontEnd. Transformo tus ideas en experiencias visuales cautivadoras. También estoy aprendiendo<span className="text-secondary font-bold"> Java</span> para ampliar mis habilidades técnicas. Explora mi trabajo y descubre cómo puedo ayudarte a dar vida a tus proyectos.
                     </p>
 
                     <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10 mb-28">
