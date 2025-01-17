@@ -23,7 +23,17 @@ export const socialNetworks = [
     {
         id: 4,
         logo: <FaFileAlt size={30} />,
-        src: "#!",
+        src: [
+            {
+                language: "Español",
+                url: "downloable/cv_español.pdf"
+            
+            },
+            {
+                language: "Inglés",
+                url: "downloable/cv_english.pdf"
+            }
+        ],
         title: "Descargar Currículum vitae",
     },
 ];
@@ -166,6 +176,13 @@ export const dataPortfolio = [
         image: "/popi.png",
         urlGithub: "https://github.com/ledexxx/sofiflowers",
         urlDemo: "https://popifloreria.netlify.app",
+    },
+    {
+        id: 5,
+        title: "Covid-19",
+        image: "/covid.png",
+        urlGithub: "https://popifloreria.netlify.app",
+        urlDemo: "https://covid-19-eta.vercel.app/",
     },
     
 ];
