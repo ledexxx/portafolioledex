@@ -35,7 +35,7 @@ const Header = () => {
                                         {logo}
                                     </button>
                                     {isDropdownOpen && (
-                                        <div className="absolute left-0 mt-2 bg-[#121324] shadow-lg border rounded-md w-48 z-50">
+                                        <div className="absolute left-0 mt-2 bg-[#121324] shadow-lg border rounded-md w-42 z-50">
                                             {src.map(({ language, url }, index) => (
                                                 <Link
                                                     key={`${id}-${index}`}

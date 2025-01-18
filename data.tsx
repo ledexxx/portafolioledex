@@ -26,12 +26,12 @@ export const socialNetworks = [
         src: [
             {
                 language: "Español",
-                url: "downloable/cv_español.pdf"
+                url: "../downloable/cv_español.pdf"
             
             },
             {
                 language: "Inglés",
-                url: "downloable/cv_english.pdf"
+                url: "../downloable/cv_english.pdf"
             }
         ],
         title: "Descargar Currículum vitae",
@@ -78,28 +78,28 @@ export const dataAboutPage = [
         id: 1,
         title: "Desarrollador Front End",
         subtitle: "May Dev Technologies",
-        description: "Genero desarrollo Front End para proyectos a medianas empresas ",
+        description: "Diseñé interfaces de usuario desarrollando wireframes y prototipos utilizando Figma. Implementé prácticas de SEO técnico para optimizar la visibilidad en motores de búsqueda, incluyendo etiquetas meta y estructura semántica.",
         date: "Agos 2024 ",
     },
     {
         id: 2,
         title: "Diseñador Gráfico",
         subtitle: "Optica Vlentes",
-        description: "Creación de un logotipo único y memorable que refleja la identidad de Óptica Vlentes. Desarrollo de una identidad visual coherente y atractiva que destaca en el mercado. Diseño de contenido visual impactante y dinámico para potenciar la presencia en redes sociales y atraer a más clientes. ",
+        description: "Diseñé un logotipo único y memorable para Óptica Vlentes. Desarrollé una identidad visual coherente y atractiva que se refleja en todos los materiales de marketing y comunicación.Creé contenido visual impactante y dinámico que ha potenciado la presencia en redes sociales y ha atraído a más clientes.",
         date: "Nov 2022 ",
     },
     {
         id: 3,
-        title: "Artista digital",
-        subtitle: "CreativosCorpVzla ",
-        description: "Movimiento artístico creado para aumentar la visibilidad de sus integrantes en 2020, consiguió financiamento regional y luego se disolvió por decisión de los integrantes.",
+        title: "Diseñador Gráfico y Operador de Radio",
+        subtitle: "Radio La Serena EIRL ",
+        description: "Diseñé y desarrollé materiales promocionales para campañas de marketing,incluyendo folletos, carteles y recursos para redes sociales.Colaboré con el equipo de producción para crear contenido de radio atractivoy relevante, incluyendo entrevistas, reportajes y segmentos de noticias.",
         date: "May 2021",
     },
     {
         id: 4,
-        title: "Diseño UI",
+        title: "Diseñador de Marketing Digital",
         subtitle: "Angeles del Hogar cl",
-        description: "Diseño de interfaces visualmente atractivas y funcionales para una aplicación web eccomerce, colaborando con equipos de UX y desarrolladores. ",
+        description: "Diseñé materiales promocionales para campañas de marketing.Gestioné el contenido en redes sociales y mejoré la interacción en un 20%. Utilicé herramientas de diseño gráfico como Adobe Photoshop.",
         date: "Ago 2019",
     },
    
@@ -115,14 +115,14 @@ export const dataCounter = [
     },
     {
         id: 1,
-        endCounter: 15,
+        endCounter: 8,
         text: "Clientes satisfechos",
         lineRight: true,
         lineRightMobile: false,
     },
     {
         id: 2,
-        endCounter: 6,
+        endCounter: 3,
         text: "Proyectos finalizados",
         lineRight: true,
         lineRightMobile: true,
@@ -179,6 +179,13 @@ export const dataPortfolio = [
     },
     {
         id: 5,
+        title: "Covid-19",
+        image: "/covid.png",
+        urlGithub: "https://popifloreria.netlify.app",
+        urlDemo: "https://covid-19-eta.vercel.app/",
+    },
+    {
+        id: 6,
         title: "Covid-19",
         image: "/covid.png",
         urlGithub: "https://popifloreria.netlify.app",
