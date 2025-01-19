@@ -65,41 +65,36 @@ export const itemsNavbar = [
         icon: <Briefcase size={25} color="#fff" strokeWidth={1} />,
         link: "/portfolio",
     },
-    {
-        id: 5,
-        title: "Home",
-        icon: <Speech size={25} color="#fff" strokeWidth={1} />,
-        link: "/testimonials",
-    },
+   
 ];
 
 export const dataAboutPage = [
     {
         id: 1,
         title: "Desarrollador Front End",
-        subtitle: "May Dev Technologies",
-        description: "Diseñé interfaces de usuario desarrollando wireframes y prototipos utilizando Figma. Implementé prácticas de SEO técnico para optimizar la visibilidad en motores de búsqueda, incluyendo etiquetas meta y estructura semántica.",
+        subtitle: "May Dev Technologies SPA",
+        description: "Diseñé interfaces de usuario desarrollando wireframes y prototipos utilizando Figma.  Implementé prácticas de SEO técnico para optimizar la visibilidad en motores de búsqueda, incluyendo etiquetas meta y estructura semántica.",
         date: "Agos 2024 ",
     },
     {
         id: 2,
         title: "Diseñador Gráfico",
         subtitle: "Optica Vlentes",
-        description: "Diseñé un logotipo único y memorable para Óptica Vlentes. Desarrollé una identidad visual coherente y atractiva que se refleja en todos los materiales de marketing y comunicación.Creé contenido visual impactante y dinámico que ha potenciado la presencia en redes sociales y ha atraído a más clientes.",
+        description: "Diseñé un logotipo único y memorable para Óptica Vlentes.  Desarrollé una identidad visual coherente y atractiva que se refleja en todos los materiales de marketing y comunicación. Creé contenido visual impactante y dinámico que ha potenciado la presencia en redes sociales y ha atraído a más clientes.",
         date: "Nov 2022 ",
     },
     {
         id: 3,
         title: "Diseñador Gráfico y Operador de Radio",
         subtitle: "Radio La Serena EIRL ",
-        description: "Diseñé y desarrollé materiales promocionales para campañas de marketing,incluyendo folletos, carteles y recursos para redes sociales.Colaboré con el equipo de producción para crear contenido de radio atractivoy relevante, incluyendo entrevistas, reportajes y segmentos de noticias.",
+        description: "Diseñé y desarrollé materiales promocionales para campañas de marketing, incluyendo folletos, carteles y recursos para redes sociales.  Colaboré con el equipo de producción para crear contenido de radio atractivo y relevante, incluyendo entrevistas, reportajes y segmentos de noticias.",
         date: "May 2021",
     },
     {
         id: 4,
-        title: "Diseñador de Marketing Digital",
-        subtitle: "Angeles del Hogar cl",
-        description: "Diseñé materiales promocionales para campañas de marketing.Gestioné el contenido en redes sociales y mejoré la interacción en un 20%. Utilicé herramientas de diseño gráfico como Adobe Photoshop.",
+        title: "Diseñador Gráfico/Artista Publicitario",
+        subtitle: "Angeles del Hogar SPA",
+        description: "Diseñé materiales promocionales para campañas de marketing.  Gestioné el contenido en redes sociales y mejoré la interacción en un 20%. Utilicé herramientas de diseño gráfico como Adobe Photoshop.",
         date: "Ago 2019",
     },
    
@@ -179,14 +174,14 @@ export const dataPortfolio = [
     },
     {
         id: 5,
-        title: "Covid-19",
+        title: "Proyecto 5",
         image: "/covid.png",
         urlGithub: "https://popifloreria.netlify.app",
         urlDemo: "https://covid-19-eta.vercel.app/",
     },
     {
         id: 6,
-        title: "Covid-19",
+        title: "Proyecto 6",
         image: "/covid.png",
         urlGithub: "https://popifloreria.netlify.app",
         urlDemo: "https://covid-19-eta.vercel.app/",
@@ -194,35 +189,3 @@ export const dataPortfolio = [
     
 ];
 
-export const dataTestimonials = [
-    {
-        id: 1,
-        name: "Marco Yanez",
-        description:
-            "Increíble trabajo el que realiza Leonel Delgado, fascinado desde el día 1 que lo contraté.",
-        imageUrl: "/profile98.png",
-    },
-    {
-        id: 2,
-        name: "Vanessa Rodriguez",
-        description:
-            "Desde el día 1 que comencé con mi empresa y contacté a Leonel mis problemas se fueron, encontró la identidad visual para mi empresa que tanto buscaba y realizó un trabajo impecable con mis redes sociales.",
-        imageUrl: "/profile2.jpg",
-    },
-    {
-        id: 3,
-        name: "Felix García",
-        description:
-            "Desde el día 1 al ver la experiencia y creatividad de Leonel me decidí a trabajar con él. Luego de 2 meses me solucionó grandes problemas de diseño que mi página tenía",
-        imageUrl: "/profile3.png",
-    },
-   
-    {
-        id: 4,
-        name: "Angel Fuentes",
-        description:
-            "Una joya en la web. El diseño de la página era exactamente lo que necesitaba!",
-        imageUrl: "/profile5.png",
-    },
-  
-];

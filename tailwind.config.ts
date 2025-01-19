@@ -12,8 +12,8 @@ const config: Config = {
 
     colors:
     {
-        tertiary:"#DC9B0F",
-        secondary:"#FFCD00",
+        tertiary:"#16b5c9",
+        secondary:"#16b5c9",
         darkbg:"#12252b"
     },
 
