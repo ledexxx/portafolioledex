@@ -12,7 +12,7 @@ const config: Config = {
 
     colors:
     {
-        tertiary:"#16b5c9",
+        tertiary:"#0541a1",
         secondary:"#16b5c9",
         darkbg:"#12252b"
     },

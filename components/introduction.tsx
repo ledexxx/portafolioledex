@@ -34,7 +34,7 @@ const Introduction = () => {
                         <a href="/projects" className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:text-black hover:bg-white">
                             Ver proyectos
                         </a>
-                        <a href="/contact"
+                        <a href="mailto:leedex96@gmail.com?subject=Consulta%20desde%20tu%20sitio%20web&body=Hola%20Leonel,%20me%20gustaría%20saber%20más%20sobre%20tus%20servicios." 
                             className="px-3 py-2 my-5 transition-all  cursor-pointer text-md w-fit text-white bg-secondary  rounded-xl hover:border-2 hover:bg-transparent" >
                             Contáctame
                         </a>
