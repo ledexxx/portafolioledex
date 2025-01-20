@@ -18,7 +18,7 @@ const TimeLine = () => {
                                         after:border-4 after:box-content after:border-slate-50 
                                         after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 
                                         after:translate-y-1.5">
-                                <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-white rounded-full">{data.date}</time>
+                                <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-gray-500 bg-white rounded-full">{data.date}</time>
                                 <div className="text-xl font-bold text-secondary">{data.subtitle}</div>
                             </div>
                             <div className="text-slate-400">{data.description}</div>

@@ -150,6 +150,7 @@ export const dataPortfolio = [
         image: "/image-1.png",
         urlGithub: "https://github.com/ledexxx/ap-logistics",
         urlDemo: "https://vercelaplogi.vercel.app/",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc"
     },
     {
         id: 2,
@@ -157,6 +158,7 @@ export const dataPortfolio = [
         image: "/atarashi.png",
         urlGithub: "https://github.com/ledexxx/Atarashisushi",
         urlDemo: "https://atarashi-sushi-menu.vercel.app/",
+         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc"
     },
     {
         id: 3,
@@ -164,6 +166,7 @@ export const dataPortfolio = [
         image: "/futuralib.png",
         urlGithub: "https://github.com/Gabyot/FuturaLib-1",
         urlDemo: "https://www.canva.com/design/DAF23vLd18w/LaC7L7cHuEhYFtg5d05umQ/view?utm_content=DAF23vLd18w&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc"
     },
     {
         id: 4,
@@ -171,6 +174,7 @@ export const dataPortfolio = [
         image: "/popi.png",
         urlGithub: "https://github.com/ledexxx/sofiflowers",
         urlDemo: "https://popifloreria.netlify.app",
+         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc"
     },
     {
         id: 5,
@@ -178,6 +182,7 @@ export const dataPortfolio = [
         image: "/covid.png",
         urlGithub: "https://popifloreria.netlify.app",
         urlDemo: "https://covid-19-eta.vercel.app/",
+         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc"
     },
     {
         id: 6,
@@ -185,6 +190,7 @@ export const dataPortfolio = [
         image: "/covid.png",
         urlGithub: "https://popifloreria.netlify.app",
         urlDemo: "https://covid-19-eta.vercel.app/",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc"
     },
     
 ];
