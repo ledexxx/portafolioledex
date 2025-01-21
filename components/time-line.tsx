@@ -14,7 +14,7 @@ const TimeLine = () => {
                                         before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] 
                                         before:self-start before:-translate-x-1/2 
                                         before:translate-y-3 after:absolute after:left-2 
-                                        sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 
+                                        sm:after:left-0 after:w-2 after:h-2 after:bg-blue-800 
                                         after:border-4 after:box-content after:border-slate-50 
                                         after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 
                                         after:translate-y-1.5">
