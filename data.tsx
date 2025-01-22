@@ -31,7 +31,7 @@ export const socialNetworks = [
             },
             {
                 language: "Inglés",
-                url: "/downloable/cv_ingles.pdf"
+                url: "/downloable/cv_english.pdf"
             }
         ],
         title: "Descargar Currículum vitae",
