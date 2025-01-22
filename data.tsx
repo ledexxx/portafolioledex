@@ -26,12 +26,12 @@ export const socialNetworks = [
         src: [
             {
                 language: "Español",
-                url: "@downloable/cv_español.pdf"
+                url: "/downloable/cv_español.pdf"
             
             },
             {
                 language: "Inglés",
-                url: "@downloable/cv_ingles.pdf"
+                url: "/downloable/cv_ingles.pdf"
             }
         ],
         title: "Descargar Currículum vitae",
