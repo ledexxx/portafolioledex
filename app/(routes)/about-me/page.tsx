@@ -1,6 +1,4 @@
 "use client"
-
-import { Avatar } from "@/components/avatar";
 import ContainerPage from "@/components/container-page";
 import CounterServices from "@/components/counter-services";
 import TimeLine from "@/components/time-line";
