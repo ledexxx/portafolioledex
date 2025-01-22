@@ -219,7 +219,7 @@ export const dataPortfolio = [
     {
         id: 6,
         title: "Educontrol",
-        image: "/educontrol.webp",
+        image: "/Educontrol.webp",
         urlGithub: "https://github.com/ledexxx/EduControl",
         urlDemo: "https://covid-19-eta.vercel.app/",
         description: "Proyecto final de la Universidad, una plataforma de gestión de asistencia escolar con roles de usuario y generación de código QR para el registro de asistencia"
