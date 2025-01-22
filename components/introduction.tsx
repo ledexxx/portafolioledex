@@ -5,7 +5,7 @@ const Introduction = () => {
     return (
         <div className="z-20 w-full bg-darkBg/60">
             <div className="z-20 grid items-center h-full p-6 pt-20 md:py-0 md:grid-cols-2 pb-28">
-                <Image src="/home-4.png" priority width="800" height="800" alt="Avatar" />
+                <Image src="/avatar.png" priority width="800" height="800" alt="Avatar" />
                 <div className="flex flex-col justify-center max-w-md ">
                     <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Si tienes un proyecto, <br />
                         <TypeAnimation
@@ -35,7 +35,7 @@ const Introduction = () => {
                             Ver proyectos
                         </a>
                         <a href="mailto:leedex96@gmail.com?subject=Consulta%20desde%20tu%20sitio%20web&body=Hola%20Leonel,%20me%20gustaría%20saber%20más%20sobre%20tus%20servicios." 
-                            className="px-3 py-2 my-5 transition-all  cursor-pointer text-md w-fit text-white bg-secondary  rounded-xl hover:border-2 hover:bg-transparent" >
+                            className="px-3 py-2 my-5 transition-all  cursor-pointer text-md w-fit text-white bg-secondary  rounded-xl  hover:bg-tertiary" >
                             Contáctame
                         </a>
                     </div>

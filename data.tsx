@@ -26,12 +26,12 @@ export const socialNetworks = [
         src: [
             {
                 language: "Español",
-                url: "../downloable/cv_español.pdf"
+                url: "@downloable/cv_español.pdf"
             
             },
             {
                 language: "Inglés",
-                url: "../downloable/cv_english.pdf"
+                url: "@downloable/cv_ingles.pdf"
             }
         ],
         title: "Descargar Currículum vitae",
@@ -125,29 +125,61 @@ export const dataCounter = [
    
 ];
 
-export const serviceData = [
+export interface Service {
+    id: number;
+    title: string;
+    description: string;
+    icon: string;
+    features: string[];
+}
+
+export const servicesData: Service[] = [
     {
-        icon: <Crop />,
+        id: 1,
         title: "Branding",
-        description: "Desarrollo de una identidad de marca sólida y coherente, incluyendo diseño de logotipo, colores y elementos visuales",
+        description: "Desarrollo de una identidad de marca sólida y coherente.",
+        icon: "palette",
+        features: [
+            "Diseño de logotipo",
+            "Paleta de colores",
+            "Tipografía",
+            "Guía de estilo",
+            "Elementos visuales"
+        ]
     },
     {
-        icon: <Pencil />,
+        id: 2,
         title: "Diseño web",
-        description: "Diseño creativo y profesional de interfaces web intuitivas y atractivas, centradas en la experiencia del usuario",
+        description: "Diseño creativo y profesional de interfaces web intuitivas y atractivas.",
+        icon: "pen-tool",
+        features: [
+            "Diseño UI/UX",
+            "Wireframes",
+            "Prototipos interactivos",
+            "Responsive design",
+            "Optimización visual"
+        ]
     },
     {
-        icon: <Computer />,
+        id: 3,
         title: "Desarrollo web",
         description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
-    },
+        icon: "code",
+        features: [
+            "Desarrollo frontend",
+            "Optimización SEO",
+            "Rendimiento web",
+            "Integración APIs",
+            "Mantenimiento"
+        ]
+    }
 ];
 
 export const dataPortfolio = [
     {
         id: 1,
         title: "Ap Logistics",
-        image: "/image-1.png",
+        image: "/image-1.webp",
         urlGithub: "https://github.com/ledexxx/ap-logistics",
         urlDemo: "https://vercelaplogi.vercel.app/",
         description: "Sistema de gestión de inventarios con gráficas de stock y reportes de ventas"
@@ -155,7 +187,7 @@ export const dataPortfolio = [
     {
         id: 2,
         title: "Menú Restaurant Atarashi",
-        image: "/atarashi.png",
+        image: "/atarashi.webp",
         urlGithub: "https://github.com/ledexxx/Atarashisushi",
         urlDemo: "https://atarashi-sushi-menu.vercel.app/",
          description: "Menú digital con búsqueda reactiva y categorías de platos"
@@ -163,7 +195,7 @@ export const dataPortfolio = [
     {
         id: 3,
         title: "Futuralib",
-        image: "/futuralib.png",
+        image: "/futuralib.webp",
         urlGithub: "https://github.com/Gabyot/FuturaLib-1",
         urlDemo: "https://www.canva.com/design/DAF23vLd18w/LaC7L7cHuEhYFtg5d05umQ/view?utm_content=DAF23vLd18w&utm_campaign=designshare&utm_medium=link&utm_source=editor",
         description: "Plataforma de gestión bibliotecaria digital, Hecho con Python,Html, Css. Mi rol en este proyecto fue diseñar las interfaces y cumplir el rol de PM en el equipo de desarrollo"
@@ -171,7 +203,7 @@ export const dataPortfolio = [
     {
         id: 4,
         title: "Popi floreria",
-        image: "/popi.png",
+        image: "/popi.webp",
         urlGithub: "https://github.com/ledexxx/sofiflowers",
         urlDemo: "https://popifloreria.netlify.app",
          description: "E-commerce para florería hecho con bootstrap y vanilla js"
@@ -179,18 +211,18 @@ export const dataPortfolio = [
     {
         id: 5,
         title: "MultiIdea",
-        image: "/Multiideas.png",
-        urlGithub: "https://popifloreria.netlify.app",
+        image: "/Multiideas.webp",
+        urlGithub: "https://github.com/andreiugonzalez/Multideas3.0",
         urlDemo: "https://covid-19-eta.vercel.app/",
          description: "Aplicación de Notas con soporte multimedia,este fue un proyecto con desarrollo colaborativo en AIEP para un Módulo, el diseño UI y prototipo de la app fue realizado por mi en figma"
     },
     {
         id: 6,
         title: "Educontrol",
-        image: "/educontrol.png",
-        urlGithub: "https://popifloreria.netlify.app",
+        image: "/educontrol.webp",
+        urlGithub: "https://github.com/ledexxx/EduControl",
         urlDemo: "https://covid-19-eta.vercel.app/",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc"
+        description: "Proyecto final de la Universidad, una plataforma de gestión de asistencia escolar con roles de usuario y generación de código QR para el registro de asistencia"
     },
     
 ];

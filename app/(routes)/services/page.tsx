@@ -1,32 +1,38 @@
-import SliderServices from "@/components/slider-services";
 import TransitionPage from "@/components/transition-page";
+import React from 'react';
+import { ChevronDown } from 'lucide-react';
+import { servicesData } from '@/data';
+import ServiceCard from '@/components/ServiceCard';
 
 const ServicesPage = () => {
-    return (
-        <>
-            <TransitionPage />
-          
-            <div className="grid items-center justify-center h-screen max-w-5xl gap-6 mx-auto md:grid-cols-2 px-4 md:px-8">
-                <div className="max-w-[450px] mt-11 mx-4 ">
+  console.log('servicesData:', servicesData);
 
-                    <h1 className="text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-5 mt-8">
-                        Mis <span className="font-bold text-secondary"> servicios.</span>
-                    </h1>
-                    <p className="mb-3 text-xl text-gray-300">
-                        Ofrezco servicios especializados en diseño web frontend, enfocados en la creación de sitios web como también cualquier solución de diseño especialmente material publicitario para impulsar tu marca.
-                    </p>
-                    <button className="px-3 py-2 rounded-lg bg-secondary hover:bg-tertiary/65">
-                        <strong> Contactame</strong>
-                    </button>
-                </div>
+  return (
+    <>
+      <TransitionPage />
 
-                {/* SLIDER */}
-                <div>
-                    <SliderServices />
-                </div>
-            </div>
-        </>
-    );
-}
+      <div className="min-h-screen bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white">
+        <section className="container mx-auto px-6 pt-40 pb-20 text-center">
+          <h1 className="text-5xl md:text-7xl mb-6 animate-float">
+            Mis <span className="text-cyan-500 font-bold">servicios.</span>
+          </h1>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-12">
+            Ofrezco servicios especializados en diseño web frontend, enfocados en la creación de sitios web 
+            como también cualquier solución de diseño especialmente material publicitario para impulsar tu marca.
+          </p>
+          <ChevronDown className="w-8 h-8 mx-auto text-cyan-400 animate-bounce" />
+        </section>
+
+        <section className="container mx-auto px-6 pb-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {servicesData.map((service, index) => (
+              <ServiceCard key={service.id} service={service} index={index} />
+            ))}
+          </div>
+        </section>
+      </div>
+    </>
+  );
+};
 
 export default ServicesPage;

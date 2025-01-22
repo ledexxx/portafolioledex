@@ -9,7 +9,7 @@ interface PortfolioBoxProps {
         image: string;
         urlGithub: string;
         urlDemo: string;
-        description: string; // Agrega description si es necesario
+        description: string; 
     };
 }
 
@@ -20,7 +20,7 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
     return (
         <div
             key={id}
-            className="bg-blue-900/50 rounded-xl overflow-hidden group hover:shadow-xl hover:shadow-cyan-500/10 transition-all duration-300"
+            className="bg-blue-900/50 rounded-xl overflow-hidden group hover:shadow-xl hover:shadow-cyan-500/30 transition-all duration-300"
         >
             <div className="relative overflow-hidden">
             <img

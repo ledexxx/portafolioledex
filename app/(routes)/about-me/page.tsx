@@ -12,7 +12,7 @@ const AboutMePage = () => {
             <TransitionPage />
             <ContainerPage>
               
-                <h1 className="text-2xl leading-tight text-center md:text-left md:text-5xl md:mt-10">
+                <h1 className="text-4xl leading-tight text-center md:text-center md:mb-12 md:text-5xl md:mt-10">
                     Mi{' '}
                     <span className="font-bold text-secondary">
                         Trayectoria profesional
