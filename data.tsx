@@ -211,7 +211,7 @@ export const dataPortfolio = [
     {
         id: 5,
         title: "MultiIdea",
-        image: "/Multiideas.webp",
+        image: "/multideas.webp",
         urlGithub: "https://github.com/andreiugonzalez/Multideas3.0",
         urlDemo: "https://covid-19-eta.vercel.app/",
          description: "Aplicación de Notas con soporte multimedia,este fue un proyecto con desarrollo colaborativo en AIEP para un Módulo, el diseño UI y prototipo de la app fue realizado por mi en figma"
