@@ -27,7 +27,7 @@ const Introduction = () => {
                     </h1>
 
                     <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
-                    Hola, soy Leonel Delgado, diseñador gráfico y desarrollador Front-End. Mi pasión es transformar tus ideas en experiencias visuales impactantes y funcionales. para ampliar mis habilidades técnicas. Explora mi portafolio y descubre cómo puedo ayudarte a dar vida a tus proyectos.
+                    Soy Leonel Delgado: diseñador gráfico y desarrollador Front-End especializado en crear interfaces digitales que fusionan creatividad y tecnología. Transformo ideas en experiencias visuales impactantes con código funcional y diseño estratégico. ¿Listo para innovar? Explora mi portafolio y llevemos tus proyectos al siguiente nivel.
                     </p>
 
                     <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10 mb-28">
