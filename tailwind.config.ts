@@ -14,7 +14,8 @@ const config: Config = {
     {
         tertiary:"#3184f7",
         secondary:"#16b5c9",
-        darkbg:"#12252b"
+        darkbg:"#003783",
+        bgheader:"#00122B"
     },
 
       backgroundImage: {

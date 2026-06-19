@@ -11,8 +11,8 @@ const ServicesPage = () => {
     <>
       <TransitionPage />
 
-      <div className="min-h-screen bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white">
-        <section className="container mx-auto px-6 pt-40 pb-20 text-center">
+      <div className="min-h-screen  text-white mt-12">
+        <section className="container px-6 pt-8 pb-20 mx-auto text-center md:pt-10">
           <h1 className="text-5xl md:text-7xl mb-6 animate-float">
             Mis <span className="text-cyan-500 font-bold">servicios.</span>
           </h1>

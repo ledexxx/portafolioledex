@@ -27,7 +27,9 @@ export default function RootLayout({
 
         <Navbar/>
         <Header/>
-        {children}
+        <div className="bg-[#0b365e] pb-[var(--mobile-nav-h)] md:bg-transparent md:pb-0 md:pt-[var(--header-h-desktop)]">
+          {children}
+        </div>
       </body>
     </html>
   );

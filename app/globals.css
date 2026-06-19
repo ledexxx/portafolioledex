@@ -4,20 +4,20 @@
 
 html,body{
   color: #fff;
-  background: #06306e;
+  background: #0b365e;
+}
+
+:root {
+  --mobile-nav-h: 5rem;
+  --header-h-desktop: 6.5rem;
 }
 
 main
 {
   background: #0b365e;
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100dvh;
 }
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
-  background-color: #f5741c;
-}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

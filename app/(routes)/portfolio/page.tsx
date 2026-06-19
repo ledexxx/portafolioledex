@@ -12,7 +12,7 @@ const PortfolioPage = () => {
         <ContainerPage>
             <TransitionPage />
         
-            <div className="flex flex-col justify-center h-full md:bottom-12 pb-24"> 
+            <div className="flex flex-col justify-center h-full md:bottom-12 mt-12 ">
                 <h1 className="text-4xl animate-float leading-tight text-center md:text-6xl md:mb-5 ">Mis últimos <span className="font-bold text-secondary">trabajos realizados</span></h1>
                 <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-12">
           Explora mi portafolio de proyectos donde combino diseño y tecnología para crear experiencias digitales únicas

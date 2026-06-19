@@ -5,20 +5,28 @@ import Link from "next/link";
 import { MotionTransition } from "./transition-component";
 
 const Navbar = () => {
-    const router = usePathname();
+    const pathname = usePathname();
     
     return (
-        <MotionTransition position="right" className="fixed z-40 flex flex-col items-center justify-center w-full mt-auto pt-4 h-max bottom-10 ">
-            <nav>
-                <div className="flex items-center justify-center gap-2 px-4 py-1 rounded-full bg-white/25 background-blur-sm ">
-                    {itemsNavbar.map((item) => (
-                        <div key={item.id}
-                            className={`px-3 py-2 transition duration-100 rounded-full cursor-pointer hover:bg-tertiary ${router === item.link && 'bg-tertiary'}`}
-                        >
-                            <Link href={item.link}>{item.icon}</Link>
-                        </div>
-                    ))}
-                </div>
+        <MotionTransition
+            position="right"
+            className="fixed bottom-0 left-0 right-0 z-40 w-full md:hidden bg-[#00122b] rounded-t-3xl overflow-hidden"
+        >
+            <nav className="flex items-center justify-around px-2 py-2">
+                {itemsNavbar.map((item) => (
+                    <Link
+                        key={item.id}
+                        href={item.link}
+                        title={item.title}
+                        className={`p-3 transition duration-100 rounded-full ${
+                            pathname === item.link
+                                ? "bg-tertiary"
+                                : "hover:bg-white/10"
+                        }`}
+                    >
+                        {item.icon}
+                    </Link>
+                ))}
             </nav>
         </MotionTransition>
     );
