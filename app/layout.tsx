@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "desarrollador front-end",
     "diseño web",
     "UI UX",
-    "portafolio",
+    "SEO",
     "Leonel Delgado",
     "ledex",
     "ledexcorp",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     locale: "es_ES",
     url: "https://www.ledexcorp.site",
     siteName: "Leonel Delgado — LEDEX",
-    title: "Leonel Delgado | Diseñador Gráfico & Desarrollador Front-End",
+    title: "Leonel Delgado | Consultor Seo & Desarrollador Front-End",
     description:
       "Interfaces digitales con código funcional y diseño estratégico. ¿Listo para innovar?",
     images: [
@@ -46,14 +46,14 @@ export const metadata: Metadata = {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Leonel Delgado — Diseñador & Desarrollador Front-End",
+        alt: "Leonel Delgado — Consultor Seo & Desarrollador Front-End",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Leonel Delgado | Diseñador & Desarrollador Front-End",
+    title: "Leonel Delgado | Consultor Seo & Desarrollador Front-End",
     description:
       "Interfaces digitales con código funcional y diseño estratégico.",
     images: ["/opengraph-image.png"],
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
   },
 
   verification: {
-    google: "PEGA_AQUI_TU_CODIGO_GSC", // ← Google Search Console
+    google: "", // ← Google Search Console
   },
 };
 
@@ -85,19 +85,20 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Leonel Delgado",
-  jobTitle: "Diseñador Gráfico y Desarrollador Front-End",
+  jobTitle: "Consultor Seo & Desarrollador Front-End",
   url: "https://www.ledexcorp.site",
   image: "https://www.ledexcorp.site/opengraph-image.png",
   sameAs: [
-    "https://www.behance.net/TUUSUARIO",  // ← reemplaza
-    "https://linkedin.com/in/TUUSUARIO",  // ← reemplaza
-    "https://github.com/TUUSUARIO",       // ← reemplaza
+    "https://www.behance.net/ledex_designs",  
+    "https://www.linkedin.com/in/leonel-delgado-264784217/",  
+    "https://github.com/ledexxx",       
   ],
   knowsAbout: [
     "Diseño web",
     "Desarrollo Front-End",
     "UI/UX Design",
     "Diseño gráfico",
+    "Consultoría SEO",
   ],
 };
 

@@ -7,19 +7,22 @@ const Introduction = () => {
             <div className="z-20 grid items-start w-full p-6 pt-24 pb-6 md:items-center md:pt-4 md:pb-8 md:grid-cols-2">
 
                 {/* ── AVATAR ───────────────────────── */}
-                <Image
-                    src="/avatar.webp"
-                    priority
-                    width={800}
-                    height={800}
-                    alt="Leonel Delgado — Consultor SEO y Desarrollador Front-End"
-                />
-
+<div className="relative w-full max-w-xs mx-auto md:max-w-sm">
+    <Image
+        src="/foto-carnet.webp"
+        priority
+        width={500}
+        height={500}
+        alt="Leonel Delgado — Consultor SEO y Desarrollador Front-End"
+        className="rounded-3xl object-cover w-full shadow-2xl shadow-black/40"
+    />
+    <div className="absolute inset-0 rounded-3xl bg-secondary/10 blur-2xl -z-10 scale-95" />
+</div>
                 {/* ── COPY ─────────────────────────── */}
                 <div className="flex flex-col justify-center max-w-md gap-6">
 
                     {/* Titular animado */}
-                    <h1 className="text-2xl leading-tight text-center md:text-left md:text-4xl">
+                    <span className="text-2xl leading-tight text-center md:text-left md:text-4xl">
                         Si tienes un proyecto,{" "}
                         <br />
                         <TypeAnimation
@@ -40,43 +43,34 @@ const Introduction = () => {
                             repeat={Infinity}
                             className="font-bold text-secondary"
                         />
-                    </h1>
+                    </span>
 
                     {/* Bloque 1 — Presentación principal */}
                     <p className="text-lg md:text-xl leading-relaxed text-white/90 text-center md:text-left">
-                        Soy <span className="font-semibold text-white">Leonel Delgado</span>, 
-                        consultor SEO especializado en SEO técnico y estrategia de 
-                        posicionamiento orgánico. Ayudo a marcas y negocios a crecer en 
-                        buscadores con auditorías profundas, arquitectura de sitios y 
+                        Soy <span className="font-semibold text-white">Leonel Delgado</span>,
+                        consultor SEO especializado en SEO técnico y estrategia de
+                        posicionamiento orgánico. Ayudo a marcas y negocios a crecer en
+                        buscadores con auditorías profundas, arquitectura de sitios y
                         optimización que realmente mueve métricas.
                     </p>
 
-                    {/* [IMAGEN 1 — ej: captura GSC, gráfico de crecimiento orgánico] */}
-                    {/* <Image src="/seo-preview.webp" width={500} height={280} alt="Resultados SEO" className="rounded-xl" /> */}
-
                     {/* Bloque 2 — Desarrollo frontend */}
                     <p className="text-lg md:text-xl leading-relaxed text-white/90 text-center md:text-left">
-                        Mi diferencial está en unir el SEO con desarrollo 
-                        <span className="font-semibold text-white"> Front-End</span>: 
-                        construyo e implemento soluciones directamente en el código, 
-                        sin depender de terceros. Trabajo con React, Next.js, 
-                        WordPress y Shopify con un criterio de diseño cuidado y orientado 
+                        Mi diferencial está en unir el SEO con desarrollo
+                        <span className="font-semibold text-white"> Front-End</span>:
+                        construyo e implemento soluciones directamente en el código,
+                        sin depender de terceros. Trabajo con React, Next.js,
+                        WordPress y Shopify con un criterio de diseño cuidado y orientado
                         a la conversión.
                     </p>
 
-                    {/* [IMAGEN 2 — ej: snippet de código, stack tecnológico, captura de un proyecto] */}
-                    {/* <Image src="/dev-preview.webp" width={500} height={280} alt="Desarrollo frontend" className="rounded-xl" /> */}
-
                     {/* Bloque 3 — Flutter + aprendizaje continuo */}
                     <p className="text-lg md:text-xl leading-relaxed text-white/90 text-center md:text-left">
-                        Actualmente expandiendo hacia el desarrollo móvil con 
-                        <span className="font-semibold text-white"> Flutter</span> — 
-                        porque la mejor versión de un producto no termina en el navegador. 
+                        Actualmente expandiendo hacia el desarrollo móvil con
+                        <span className="font-semibold text-white"> Flutter</span> —
+                        porque la mejor versión de un producto no termina en el navegador.
                         Aprendizaje continuo, adaptación constante.
                     </p>
-
-                    {/* [IMAGEN 3 — ej: mockup app móvil, Flutter UI] */}
-                    {/* <Image src="/flutter-preview.webp" width={500} height={280} alt="Desarrollo móvil con Flutter" className="rounded-xl" /> */}
 
                     {/* CTAs */}
                     <div className="flex items-center justify-center gap-3 md:justify-start md:gap-6">

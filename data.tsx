@@ -1,4 +1,4 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, FileDown, Crop, Pencil, Computer, Globe, Rocket, Speech, Briefcase,} from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, FileDown, Crop, Pencil, Computer, Globe, Rocket, Speech, Briefcase,Search,} from "lucide-react";
 import { FaBehance, FaFileAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export const socialNetworks = [
@@ -69,48 +69,69 @@ export const itemsNavbar = [
 ];
 
 export const dataAboutPage = [
-    {
-        id: 1,
-        title: "Desarrollador Front End",
-        subtitle: "May Dev Technologies SPA",
-        description: "Diseñé interfaces de usuario desarrollando wireframes y prototipos utilizando Figma.  Implementé prácticas de SEO técnico para optimizar la visibilidad en motores de búsqueda, incluyendo etiquetas meta y estructura semántica.",
-        date: "Agos 2024 ",
-    },
-    {
-        id: 2,
-        title: "Diseñador Gráfico",
-        subtitle: "Optica Vlentes",
-        description: "Diseñé un logotipo único y memorable para Óptica Vlentes.  Desarrollé una identidad visual coherente y atractiva que se refleja en todos los materiales de marketing y comunicación. Creé contenido visual impactante y dinámico que ha potenciado la presencia en redes sociales y ha atraído a más clientes.",
-        date: "Nov 2022 ",
-    },
-    {
-        id: 3,
-        title: "Diseñador Gráfico y Operador de Radio",
-        subtitle: "Radio La Serena EIRL ",
-        description: "Diseñé y desarrollé materiales promocionales para campañas de marketing, incluyendo folletos, carteles y recursos para redes sociales.  Colaboré con el equipo de producción para crear contenido de radio atractivo y relevante, incluyendo entrevistas, reportajes y segmentos de noticias.",
-        date: "May 2021",
-    },
-    {
-        id: 4,
-        title: "Diseñador Gráfico/Artista Publicitario",
-        subtitle: "Angeles del Hogar SPA",
-        description: "Diseñé materiales promocionales para campañas de marketing.  Gestioné el contenido en redes sociales y mejoré la interacción en un 20%. Utilicé herramientas de diseño gráfico como Adobe Photoshop.",
-        date: "Ago 2019",
-    },
+  {
+    id: 1,
+    title: "Director de Proyectos SEO",
+    subtitle: "Agencia de Posicionamiento Web - RyF",
+    description: "Lidero la estrategia de posicionamiento orgánico de los clientes de la agencia, coordinando auditorías técnicas, implementación de mejoras y seguimiento de resultados. Gestiono proyectos de SEO técnico en WordPress con foco en Core Web Vitals, arquitectura de sitios y optimización de conversión.",
+    date: "Ene 2026",
+},
+{
+    id: 2,
+    title: "Consultor de Posicionamiento Web",
+    subtitle: "Agencia de Posicionamiento Web - RyF",
+    description: "Implementé estrategias SEO técnicas y On-Page para clientes en sectores competitivos. Realicé auditorías de sitios, optimización de etiquetas meta, estructura semántica y velocidad de carga, logrando mejoras medibles en visibilidad orgánica y tráfico desde Google.",
+    date: "Dic 2024",
+},
+{
+    id: 3,
+    title: "Consultor de Posicionamiento Web",
+    subtitle: "TourismTiger",
+    description: "Consultoría SEO especializada para agencias de turismo a nivel internacional. Optimicé sitios en inglés aplicando buenas prácticas técnicas, investigación de palabras clave y mejora de contenidos orientados a la conversión.",
+    date: "May 2024",
+},
+{
+    id: 4,
+    title: "Desarrollador Front-End",
+    subtitle: "MAYDEV LTD",
+    description: "Diseñé interfaces de usuario desarrollando wireframes y prototipos en Figma. Implementé prácticas de SEO técnico para optimizar la visibilidad en motores de búsqueda, incluyendo etiquetas meta, estructura semántica y rendimiento web con React.js.",
+    date: "Mar 2022",
+},
+{
+    id: 5,
+    title: "Diseñador Gráfico de Marketing",
+    subtitle: "Ángeles del Hogar SPA",
+    description: "Diseñé materiales promocionales para campañas de marketing. Gestioné el contenido en redes sociales mejorando la interacción en un 20%. Utilicé Adobe Photoshop para crear piezas visuales alineadas con la identidad de la marca.",
+    date: "Feb 2020",
+},
+{
+    id: 6,
+    title: "Diseñador Gráfico",
+    subtitle: "Óptica Vlentes",
+    description: "Diseñé un logotipo único y memorable para la marca. Desarrollé una identidad visual coherente que se reflejó en todos los materiales de marketing y comunicación. Creé contenido visual dinámico que potenció la presencia en redes sociales y atrajo nuevos clientes.",
+    date: "Nov 2022",
+},
+{
+    id: 7,
+    title: "Diseñador Gráfico y Operador de Radio",
+    subtitle: "Radio La Serena EIRL",
+    description: "Diseñé materiales promocionales para campañas de marketing, incluyendo folletos, carteles y recursos para redes sociales. Colaboré con el equipo de producción creando contenido de radio atractivo, incluyendo entrevistas, reportajes y segmentos de noticias.",
+    date: "May 2021",
+},
    
 ]
 
 export const dataCounter = [
     {
         id: 0,
-        endCounter: 1,
+        endCounter: 3,
         text: "Años de experiencia",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 1,
-        endCounter: 8,
+        endCounter: 12,
         text: "Clientes satisfechos",
         lineRight: true,
         lineRightMobile: false,
@@ -124,7 +145,6 @@ export const dataCounter = [
     },
    
 ];
-
 export interface Service {
     id: number;
     title: string;
@@ -136,45 +156,48 @@ export interface Service {
 export const servicesData: Service[] = [
     {
         id: 1,
-        title: "Branding",
-        description: "Desarrollo de una identidad de marca sólida y coherente.",
-        icon: "palette",
+        title: "Consultoría SEO",
+        description:
+            "Posiciono tu sitio en los primeros resultados de Google con estrategia técnica, auditorías profundas y optimización continua que realmente mueve métricas.",
+        icon: "Search",
         features: [
-            "Diseño de logotipo",
-            "Paleta de colores",
-            "Tipografía",
-            "Guía de estilo",
-            "Elementos visuales"
-        ]
+            "Auditoría SEO técnica completa",
+            "Optimización On-Page y Core Web Vitals",
+            "Arquitectura web y estructura de URLs",
+            "Estrategia de contenido y keywords",
+            "Integración con Google Search Console",
+            "SEO para WordPress, Shopify y Next.js",
+        ],
     },
     {
         id: 2,
-        title: "Diseño web",
-        description: "Diseño creativo y profesional de interfaces web intuitivas y atractivas.",
-        icon: "pen-tool",
+        title: "Desarrollo web",
+        description:
+            "Desarrollo sitios web a medida, rápidos y optimizados, integrando código limpio con criterio de diseño y visión SEO desde el inicio.",
+        icon: "code",
         features: [
-            "Diseño UI/UX",
-            "Wireframes",
-            "Prototipos interactivos",
-            "Responsive design",
-            "Optimización visual"
-        ]
+            "Desarrollo frontend (React / Next.js)",
+            "WordPress y Shopify",
+            "Rendimiento y Core Web Vitals",
+            "Integración de APIs",
+            "Mantenimiento y soporte",
+        ],
     },
     {
         id: 3,
-        title: "Desarrollo web",
-        description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
-        icon: "code",
+        title: "Diseño web & Branding",
+        description:
+            "Creo identidades visuales y interfaces que comunican, convierten y se recuerdan — con un criterio estético cuidado y orientado a resultados.",
+        icon: "palette",
         features: [
-            "Desarrollo frontend",
-            "Optimización SEO",
-            "Rendimiento web",
-            "Integración APIs",
-            "Mantenimiento"
-        ]
-    }
+            "Diseño UI/UX",
+            "Identidad de marca y logotipo",
+            "Paleta de colores y tipografía",
+            "Prototipado interactivo",
+            "Responsive design",
+        ],
+    },
 ];
-
 export const dataPortfolio = [
     {
         id: 1,
