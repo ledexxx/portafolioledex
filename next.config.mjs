@@ -17,11 +17,12 @@ const securityHeaders = [
         key: "Content-Security-Policy",
         value: [
             "default-src 'self'",
-            "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com",
+            "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://maps.googleapis.com",
             "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://api.fontshare.com",
             "font-src 'self' https://fonts.gstatic.com https://api.fontshare.com",
-            "img-src 'self' data: blob: https://cdn.simpleicons.org https://www.ledexcorp.site",
-            "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com",
+            "img-src 'self' data: blob: https://cdn.simpleicons.org https://www.ledexcorp.site https://maps.gstatic.com https://*.googleapis.com",
+            "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://maps.googleapis.com",
+            "frame-src https://www.google.com/maps/ https://maps.google.com/",  // ← esto es lo que faltaba
             "frame-ancestors 'none'",
         ].join("; "),
     },
