@@ -30,7 +30,7 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
             />
             </div>
             <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">{title}</h3>
+                <span className="text-xl font-bold mb-2">{title}</span>
                 {description && (
                     <p className="text-gray-300 mb-4">{description}</p>
                 )}

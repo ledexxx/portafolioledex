@@ -1,30 +1,28 @@
-import Image from "next/image";
-import Link from "next/link";
+import type { Metadata } from "next";
+import PortfolioClient from "./portfolio-client";
 
-import { dataPortfolio } from "@/data";
+export const metadata: Metadata = {
+    title: "Portafolio — Proyectos Web & SEO",
+    description:
+        "Explora mis últimos proyectos: desarrollo web con React, Next.js, WordPress y Shopify, combinando diseño y tecnología para crear experiencias digitales únicas.",
+    alternates: {
+        canonical: "https://www.ledexcorp.site/portfolio",
+    },
+    openGraph: {
+        title: "Portafolio — Proyectos Web & SEO | Leonel Delgado",
+        description:
+            "Proyectos de desarrollo web frontend, e-commerce y SEO técnico. React, Next.js, WordPress, Shopify y más.",
+        url: "https://www.ledexcorp.site/portfolio",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Portafolio | Leonel Delgado — Desarrollador Web & SEO",
+        description:
+            "Últimos proyectos de desarrollo web y SEO. React, Next.js, WordPress y Shopify.",
+    },
+};
 
-import TransitionPage from "@/components/transition-page";
-import ContainerPage from "@/components/container-page";
-import PortfolioBox from "@/components/portfolio-box";
-
-const PortfolioPage = () => {
-    return (
-        <ContainerPage>
-            <TransitionPage />
-        
-            <div className="flex flex-col justify-center h-full md:bottom-12 mt-12 ">
-                <h1 className="text-4xl animate-float leading-tight text-center md:text-6xl md:mb-5 ">Mis últimos <span className="font-bold text-secondary">trabajos realizados</span></h1>
-                <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-12">
-          Explora mi portafolio de proyectos donde combino diseño y tecnología para crear experiencias digitales únicas
-        </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-                    {dataPortfolio.map((data) => (
-                        <PortfolioBox key={data.id} data={data} />
-                    ))}
-                </div>
-            </div>
-        </ContainerPage>
-    );
+export default function Page() {
+    return <PortfolioClient />;
 }
-
-export default PortfolioPage;
