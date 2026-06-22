@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
 
-export default nextConfig;
-// next.config.js
 const securityHeaders = [
     {
         key: "Referrer-Policy",
@@ -23,13 +20,13 @@ const securityHeaders = [
             "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com",
             "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://api.fontshare.com",
             "font-src 'self' https://fonts.gstatic.com https://api.fontshare.com",
-            "img-src 'self' data: https://cdn.simpleicons.org",
-            "connect-src 'self'",
+            "img-src 'self' data: blob: https://cdn.simpleicons.org https://www.ledexcorp.site",
+            "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com",
+            "frame-ancestors 'none'",
         ].join("; "),
     },
 ];
 
-/** @type {import('next').NextConfig} */
 const nextConfig = {
     async headers() {
         return [
@@ -41,4 +38,4 @@ const nextConfig = {
     },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
