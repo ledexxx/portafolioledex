@@ -8,6 +8,7 @@ import Footer from "@/components/footer";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import CookieBanner from "@/components/cookie-banner";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -143,7 +144,7 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
-
+        <CookieBanner />
       </body>
     </html>
   );

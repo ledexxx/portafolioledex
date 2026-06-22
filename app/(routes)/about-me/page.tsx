@@ -26,7 +26,6 @@ const AboutMePage = () => {
                     </span>
                 </div>
 
-                {/* H1 SEO local */}
                 <h1 className="sr-only">Consultor SEO freelancer en Soria</h1>
 
                 {/* ── BLOQUE 1 — Quién soy | imagen derecha ────────── */}
@@ -50,14 +49,13 @@ const AboutMePage = () => {
                         </p>
                     </div>
 
-                    {/* Imagen derecha */}
-
-                    <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl bg-white/5">
+                    {/* Imagen derecha — leoyo.webp 400x400 (cuadrada) */}
+                    <div className="relative w-full max-w-sm mx-auto md:max-w-md aspect-square rounded-2xl overflow-hidden shadow-xl bg-white/5">
                         <Image
                             src="/leoyo.webp"
                             alt="Leonel Delgado — Consultor SEO"
                             fill
-                            className="object-cover object-top"
+                            className="object-cover object-center"
                             sizes="(max-width: 768px) 100vw, 50vw"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#0b1f3a]/40 to-transparent" />
@@ -67,13 +65,13 @@ const AboutMePage = () => {
                 {/* ── BLOQUE 2 — Formación | imagen izquierda ──────── */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center mb-20 px-4">
 
-                    {/* Imagen izquierda */}
-                    <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl order-2 md:order-1">
+                    {/* Imagen izquierda — foto-graduacion.webp 1080x1361 (4:5) */}
+                    <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-xl order-2 md:order-1">
                         <Image
                             src="/foto-graduacion.webp"
                             alt="Leonel Delgado — Graduación AIEP"
                             fill
-                            className="object-cover object-top"
+                            className="object-cover object-center"
                             sizes="(max-width: 768px) 100vw, 50vw"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#0b1f3a]/40 to-transparent" />
@@ -99,7 +97,7 @@ const AboutMePage = () => {
                     </div>
                 </div>
 
-                {/* ── BLOQUE 3 — Propuesta de valor | imagen derecha + CTA */}
+                {/* ── BLOQUE 3 — Propuesta de valor | imagen derecha ── */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center mb-20 px-4">
 
                     {/* Texto */}
@@ -137,17 +135,15 @@ const AboutMePage = () => {
                         </Link>
                     </div>
 
-                    {/* Imagen derecha */}
-                    {/* Reemplaza /about-results.webp por captura de GSC u otro asset */}
-                    <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-xl bg-white/5">
+                    {/* Imagen derecha — seo.webp 870x309 (dashboard 3:1) */}
+                    <div className="relative w-full aspect-[3/1] rounded-2xl overflow-hidden shadow-xl bg-[#f0f2f5]">
                         <Image
                             src="/seo.webp"
-                            alt="Resultados SEO obtenidos"
+                            alt="Resultados SEO reales — Google Search Console"
                             fill
-                            className="object-scale down"
+                            className="object-contain"
                             sizes="(max-width: 768px) 100vw, 50vw"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#0b1f3a]/40 to-transparent" />
                     </div>
                 </div>
 
