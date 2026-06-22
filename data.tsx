@@ -236,7 +236,7 @@ export const dataPortfolio = [
         title: "MultiIdea",
         image: "/multideas.webp",
         urlGithub: "https://github.com/andreiugonzalez/Multideas3.0",
-        urlDemo: "https://covid-19-eta.vercel.app/",
+        urlDemo: "#",
          description: "Aplicación de Notas con soporte multimedia,este fue un proyecto con desarrollo colaborativo en AIEP para un Módulo, el diseño UI y prototipo de la app fue realizado por mi en figma"
     },
     {
@@ -244,7 +244,7 @@ export const dataPortfolio = [
         title: "Educontrol",
         image: "/Educontrol.webp",
         urlGithub: "https://github.com/ledexxx/EduControl",
-        urlDemo: "https://covid-19-eta.vercel.app/",
+        urlDemo: "#",
         description: "Proyecto final de la Universidad, una plataforma de gestión de asistencia escolar con roles de usuario y generación de código QR para el registro de asistencia"
     },
     

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
-import Script from "next/script"; // 1. Importamos el componente Script de Next.js
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
@@ -15,20 +16,21 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.ledexcorp.site"),
 
   title: {
-    default: "Leonel Delgado | Diseñador Gráfico & Desarrollador Front-End",
+    default: "Leonel Delgado | Consultor SEO & Desarrollador Front-End",
     template: "%s | Leonel Delgado",
   },
   description:
-    "Diseñador gráfico y desarrollador Front-End especializado en crear interfaces digitales que fusionan creatividad y tecnología. Transformo ideas en experiencias visuales impactantes.",
+    "Consultor SEO freelancer especializado en SEO técnico, desarrollo Front-End y diseño web. Posiciono negocios en Google y construyo sitios que convierten.",
   keywords: [
-    "diseñador gráfico",
+    "consultor SEO",
+    "consultor SEO freelancer",
+    "SEO técnico",
     "desarrollador front-end",
     "diseño web",
-    "UI UX",
-    "SEO",
     "Leonel Delgado",
     "ledex",
     "ledexcorp",
+    "SEO Soria",
   ],
   authors: [{ name: "Leonel Delgado", url: "https://www.ledexcorp.site" }],
   creator: "Leonel Delgado",
@@ -38,24 +40,24 @@ export const metadata: Metadata = {
     locale: "es_ES",
     url: "https://www.ledexcorp.site",
     siteName: "Leonel Delgado — LEDEX",
-    title: "Leonel Delgado | Consultor Seo & Desarrollador Front-End",
+    title: "Leonel Delgado | Consultor SEO & Desarrollador Front-End",
     description:
-      "Interfaces digitales con código funcional y diseño estratégico. ¿Listo para innovar?",
+      "Consultor SEO freelancer. Posiciono tu negocio en Google con SEO técnico y desarrollo web orientado a la conversión.",
     images: [
       {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Leonel Delgado — Consultor Seo & Desarrollador Front-End",
+        alt: "Leonel Delgado — Consultor SEO & Desarrollador Front-End",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Leonel Delgado | Consultor Seo & Desarrollador Front-End",
+    title: "Leonel Delgado | Consultor SEO & Desarrollador Front-End",
     description:
-      "Interfaces digitales con código funcional y diseño estratégico.",
+      "Consultor SEO freelancer. Posiciono tu negocio en Google con SEO técnico y desarrollo web orientado a la conversión.",
     images: ["/opengraph-image.png"],
   },
 
@@ -76,7 +78,7 @@ export const metadata: Metadata = {
   },
 
   verification: {
-    google: "", // ← Google Search Console
+    google: "", // ← Pega aquí el código de Google Search Console cuando lo tengas
   },
 };
 
@@ -85,20 +87,22 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Leonel Delgado",
-  jobTitle: "Consultor Seo & Desarrollador Front-End",
+  jobTitle: "Consultor SEO & Desarrollador Front-End",
   url: "https://www.ledexcorp.site",
   image: "https://www.ledexcorp.site/opengraph-image.png",
   sameAs: [
-    "https://www.behance.net/ledex_designs",  
-    "https://www.linkedin.com/in/leonel-delgado-264784217/",  
-    "https://github.com/ledexxx",       
+    "https://www.behance.net/ledex_designs",
+    "https://www.linkedin.com/in/leonel-delgado-264784217/",
+    "https://github.com/ledexxx",
   ],
   knowsAbout: [
-    "Diseño web",
-    "Desarrollo Front-End",
-    "UI/UX Design",
-    "Diseño gráfico",
     "Consultoría SEO",
+    "SEO técnico",
+    "Desarrollo Front-End",
+    "Diseño web",
+    "UI/UX Design",
+    "WordPress",
+    "Shopify",
   ],
 };
 
@@ -111,8 +115,8 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={urbanist.className}>
-        
-        {/* 2. Carga asíncrona optimizada de Google Analytics (gtag.js) */}
+
+        {/* Google Analytics */}
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-TKHP79NRXL"
@@ -123,7 +127,6 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'G-TKHP79NRXL');
           `}
         </Script>
@@ -139,6 +142,7 @@ export default function RootLayout({
         <div className="bg-[#0b365e] pb-[var(--mobile-nav-h)] md:bg-transparent md:pb-0 md:pt-[var(--header-h-desktop)]">
           {children}
         </div>
+        <Footer />
 
       </body>
     </html>
