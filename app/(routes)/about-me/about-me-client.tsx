@@ -1,8 +1,8 @@
-"use client"
+
 import ContainerPage from "@/components/container-page";
 import Image from "next/image";
 import Link from "next/link";
-import CounterServices from "@/components/counter-services";
+
 import TimeLine from "@/components/time-line";
 import TransitionPage from "@/components/transition-page";
 import { MessageCircle } from "lucide-react";
@@ -16,6 +16,7 @@ const personJsonLd = {
     "@type": "ProfilePage",
     mainEntity: {
         "@type": "Person",
+        "@id": "https://www.ledexcorp.site/#person",
         name: "Leonel Delgado",
         jobTitle: "Consultor SEO & Desarrollador Front-End",
         description:
@@ -64,15 +65,15 @@ const AboutMePage = () => {
 
                 {/* ── TÍTULO ───────────────────────────────────────── */}
                 <div className="text-center mb-16 mt-12">
-                    <span className="text-4xl md:text-5xl leading-tight font-light">
+                    <h1 className="text-4xl md:text-5xl leading-tight font-light">
                         Mi{" "}
                         <span className="font-bold text-secondary">
                             Trayectoria profesional
                         </span>
-                    </span>
+                    </h1>
                 </div>
 
-                <h1 className="sr-only">Consultor SEO freelancer en Soria</h1>
+
 
                 {/* ── BLOQUE 1 — Quién soy | imagen derecha ────────── */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center mb-20 px-4">
@@ -185,7 +186,7 @@ const AboutMePage = () => {
                 </div>
 
                 {/* ── CONTADORES + TIMELINE ────────────────────────── */}
-                <CounterServices />
+                <h2 className="section-title mb-10">Experiencia profesional</h2>
                 <TimeLine />
 
             </ContainerPage>

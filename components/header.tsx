@@ -2,6 +2,7 @@
 
 import { itemsNavbar, socialNetworks } from "@/data";
 import Link from "next/link";
+import Image from "next/image";
 import { MotionTransition } from "./transition-component";
 import { useState, useRef, useEffect } from "react";
 import { usePathname } from "next/navigation";
@@ -53,14 +54,15 @@ const Header = () => {
                 shadow-[0_4px_32px_rgba(0,0,0,0.35)]
             ">
                 <Link href="/" className="shrink-0">
-                    <img src="/ledex.webp" alt="LEDEX logo" width={72} height={72} loading="eager" className="w-14 h-14" />
+                    <Image src="/ledex.webp" alt="LEDEX logo" width={72} height={72} loading="eager" className="w-14 h-14" />
                 </Link>
 
-                <nav className="flex items-center gap-1">
+                <nav aria-label="Navegación principal" className="flex items-center gap-1">
                     {itemsNavbar.map((item) => (
                         <Link
                             key={item.id}
                             href={item.link}
+                            aria-current={pathname === item.link ? "page" : undefined}
                             className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors hover:text-secondary ${
                                 pathname === item.link ? "text-secondary" : "text-white/80"
                             }`}
@@ -155,10 +157,10 @@ const Header = () => {
             </header>
 
             {/* ── MOBILE ──────────────────────────────────────────── */}
-            <header className="md:hidden px-4 mx-5">
+            <header className="md:hidden px-4 bg-[#0d1b3e]/95 backdrop-blur-md">
                 <div className="flex items-center justify-between max-w-6xl gap-4 mx-auto py-2">
                     <Link href="/" className="shrink-0">
-                        <img src="/ledex.webp" alt="LEDEX logo" width={64} height={64} loading="eager" className="w-16 h-16 my-2" />
+                        <Image src="/ledex.webp" alt="LEDEX logo" width={64} height={64} loading="eager" className="w-16 h-16 my-2" />
                     </Link>
 
                     <div className="flex items-center justify-center gap-4 mt-0 shrink-0">

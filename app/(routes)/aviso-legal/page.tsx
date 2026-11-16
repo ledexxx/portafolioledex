@@ -5,7 +5,8 @@ import TransitionPage from "@/components/transition-page";
 export const metadata: Metadata = {
     title: "Aviso Legal",
     description: "Aviso legal de Leonel Delgado — LEDEX. Términos y condiciones de uso del sitio web.",
-    robots: { index: false, follow: false },
+    alternates: { canonical: "https://www.ledexcorp.site/aviso-legal" },
+    robots: { index: false, follow: true },
 };
 
 const sections = [

@@ -29,6 +29,13 @@ const securityHeaders = [
 ];
 
 const nextConfig = {
+    async redirects() {
+        return [
+            { source: "/sobre-mi", destination: "/about-me", permanent: true },
+            { source: "/servicios", destination: "/services", permanent: true },
+            { source: "/portafolio", destination: "/portfolio", permanent: true },
+        ];
+    },
     async headers() {
         return [
             {

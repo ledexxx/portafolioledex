@@ -5,7 +5,8 @@ import TransitionPage from "@/components/transition-page";
 export const metadata: Metadata = {
     title: "Política de Cookies",
     description: "Política de cookies de Leonel Delgado — LEDEX. Información sobre el uso de cookies en este sitio web.",
-    robots: { index: false, follow: false },
+    alternates: { canonical: "https://www.ledexcorp.site/cookies" },
+    robots: { index: false, follow: true },
 };
 
 const sections = [
@@ -15,11 +16,11 @@ const sections = [
     },
     {
         titulo: "2. Cookies utilizadas en este sitio",
-        contenido: `Este sitio web utiliza los siguientes tipos de cookies: (a) Cookies técnicas o necesarias — imprescindibles para el funcionamiento básico del sitio; (b) Cookies analíticas — utilizadas a través de Google Analytics (GA4) para recopilar información estadística sobre el uso del sitio de forma anonimizada; (c) Cookies de preferencias — guardan configuraciones del usuario para mejorar la experiencia.`,
+        contenido: `La preferencia de consentimiento se guarda en el almacenamiento local del navegador con la clave ledex_cookie_consent. Las cookies analíticas de Google Analytics (GA4) solo se habilitan tras pulsar Aceptar. Rechazarlas permite seguir usando el portafolio.`,
     },
     {
         titulo: "3. Google Analytics",
-        contenido: `Este sitio utiliza Google Analytics para analizar el tráfico web. Google Analytics recopila información de forma anónima sobre cómo los usuarios interactúan con el sitio. Puede consultar la política de privacidad de Google en: policies.google.com/privacy. Para desactivar el seguimiento de Google Analytics, puede utilizar el complemento de inhabilitación disponible en: tools.google.com/dlpage/gaoptout.`,
+        contenido: `Si acepta las cookies analíticas, este sitio utiliza Google Analytics para recopilar estadísticas de navegación. Puede consultar la política de privacidad de Google en: policies.google.com/privacy. Para desactivar el seguimiento de Google Analytics, puede utilizar el complemento de inhabilitación disponible en: tools.google.com/dlpage/gaoptout.`,
     },
     {
         titulo: "4. Cómo gestionar las cookies",
@@ -27,7 +28,7 @@ const sections = [
     },
     {
         titulo: "5. Consentimiento",
-        contenido: `Al navegar por este sitio web, el usuario consiente el uso de cookies conforme a esta política. Puede retirar su consentimiento en cualquier momento eliminando las cookies de su navegador o configurándolo para que no las acepte.`,
+        contenido: `Navegar por este sitio no implica aceptar las cookies analíticas. Puede aceptar o rechazar en el aviso y cambiar su decisión con el botón Configurar cookies. Al rechazar, se desactiva el seguimiento y se eliminan las cookies de Analytics accesibles desde este dominio.`,
     },
     {
         titulo: "6. Actualizaciones",
@@ -45,7 +46,7 @@ export default function CookiesPage() {
                         Política de <span className="text-secondary">Cookies</span>
                     </h1>
                     <p className="text-sm text-white/40 mb-10">
-                        Última actualización: junio de 2026
+                        Última actualización: noviembre de 2026
                     </p>
 
                     <div className="flex flex-col gap-8">

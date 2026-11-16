@@ -1,89 +1,63 @@
-"use client"
-import { useState, useEffect } from "react";
+"use client";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
-
-const COOKIE_KEY = "ledex_cookie_consent";
-
-const CookieBanner = () => {
-    const [visible, setVisible] = useState(false);
-
-    useEffect(() => {
-        // Mostrar solo si el usuario no ha decidido aún
-        const consent = localStorage.getItem(COOKIE_KEY);
-        if (!consent) setVisible(true);
-    }, []);
-
-    const accept = () => {
-        localStorage.setItem(COOKIE_KEY, "accepted");
-        setVisible(false);
-    };
-
-    const reject = () => {
-        localStorage.setItem(COOKIE_KEY, "rejected");
-        setVisible(false);
-    };
-
-    if (!visible) return null;
-
-    return (
-        <div className="
-            fixed bottom-0 left-0 right-0 z-50
-            md:bottom-6 md:left-6 md:right-auto md:max-w-md
-            bg-[#0d1b3e] border border-white/10
-            rounded-none md:rounded-2xl
-            shadow-[0_-4px_32px_rgba(0,0,0,0.4)] md:shadow-xl
-            p-5
-            animate-in slide-in-from-bottom duration-300
-        ">
-            {/* Icono + título */}
-            <div className="flex items-center gap-2 mb-2">
-                <span className="text-lg" aria-hidden="true">🍪</span>
-                <p className="text-sm font-semibold text-white">
-                    Usamos cookies
-                </p>
-            </div>
-
-            {/* Texto */}
-            <p className="text-xs text-white/60 leading-relaxed mb-4">
-                Este sitio utiliza cookies propias y de terceros (Google Analytics)
-                para mejorar tu experiencia y analizar el tráfico de forma anónima.
-                Puedes aceptarlas, rechazarlas o{" "}
-                <Link
-                    href="/cookies"
-                    className="text-secondary underline underline-offset-2 hover:text-white transition-colors"
-                >
-                    leer más información
-                </Link>
-                .
-            </p>
-
-            {/* Botones */}
-            <div className="flex gap-3">
-                <button
-                    onClick={reject}
-                    className="
-                        flex-1 px-4 py-2 rounded-xl text-xs font-medium
-                        border border-white/20 text-white/60
-                        hover:border-white/40 hover:text-white
-                        transition-all duration-200
-                    "
-                >
-                    Rechazar
-                </button>
-                <button
-                    onClick={accept}
-                    className="
-                        flex-1 px-4 py-2 rounded-xl text-xs font-medium
-                        bg-secondary text-white
-                        hover:bg-secondary/80
-                        transition-all duration-200
-                    "
-                >
-                    Aceptar todas
-                </button>
-            </div>
-        </div>
-    );
-};
-
-export default CookieBanner;
+import Script from "next/script";
+const KEY = "ledex_cookie_consent";
+const GA = "G-TKHP79NRXL";
+type Consent = "accepted" | "rejected" | null;
+declare global {
+  interface Window {
+    dataLayer?: unknown[];
+    gtag?: (...args: unknown[]) => void;
+    "ga-disable-G-TKHP79NRXL"?: boolean;
+  }
+}
+export default function CookieBanner() {
+  const [consent, setConsent] = useState<Consent>(null);
+  const [visible, setVisible] = useState(false);
+  const pathname = usePathname();
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem(KEY);
+      if (stored === "accepted" || stored === "rejected") setConsent(stored);
+      else setVisible(true);
+    } catch { setVisible(true); }
+  }, []);
+  useEffect(() => {
+    if (consent !== "accepted") return;
+    window["ga-disable-G-TKHP79NRXL"] = false;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () { window.dataLayer!.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", GA, { send_page_view: false });
+  }, [consent]);
+  useEffect(() => {
+    if (consent === "accepted") window.gtag?.("event", "page_view", { page_path: pathname, page_location: window.location.origin + pathname, page_title: document.title });
+  }, [pathname, consent]);
+  function choose(value: Exclude<Consent, null>) {
+    window["ga-disable-G-TKHP79NRXL"] = value !== "accepted";
+    if (value === "rejected") {
+      // Clear first-party Analytics cookies, including domain-scoped cookies.
+      const domains = [window.location.hostname, ...window.location.hostname.split(".").map((_, i, parts) => parts.slice(i).join("."))];
+      document.cookie.split(";").forEach(cookie => {
+        const name = cookie.split("=")[0].trim();
+        if (!/^_ga(?:_|$)/.test(name) && name !== "_gid") return;
+        document.cookie = `${name}=; Max-Age=0; path=/`;
+        domains.forEach(domain => { document.cookie = `${name}=; Max-Age=0; path=/; domain=${domain}`; });
+      });
+    }
+    try { localStorage.setItem(KEY, value); } catch { /* Keep this visit's choice in memory. */ }
+    setConsent(value);
+    setVisible(false);
+  }
+  return <>
+    {consent === "accepted" && <Script id="analytics-loader" src={`https://www.googletagmanager.com/gtag/js?id=${GA}`} strategy="afterInteractive" />}
+    {!visible && <button onClick={() => setVisible(true)} className="fixed bottom-[calc(var(--mobile-nav-h)+0.5rem)] md:bottom-3 left-3 z-50 rounded-lg border border-white/25 bg-[#0d1b3e] px-3 py-2 text-xs">Configurar cookies</button>}
+    {visible && <section aria-label="Preferencias de cookies" className="fixed bottom-[var(--mobile-nav-h)] md:bottom-6 left-0 right-0 md:left-6 md:right-auto md:max-w-md z-50 bg-[#0d1b3e] border border-white/20 rounded-t-2xl md:rounded-2xl shadow-xl p-5 max-h-[70dvh] overflow-y-auto">
+      <h2 className="font-semibold mb-2">Tú decides sobre las cookies</h2>
+      <p className="text-sm text-white/80 leading-relaxed mb-4">Google Analytics solo se carga si aceptas las cookies analíticas. Puedes cambiar tu elección en cualquier momento. <Link href="/cookies" className="text-cyan-200 underline">Política de cookies</Link>.</p>
+      <div className="flex gap-3"><button onClick={() => choose("rejected")} className="button-outline flex-1">Rechazar</button><button onClick={() => choose("accepted")} className="button-primary flex-1">Aceptar</button></div>
+    </section>}
+  </>;
+}

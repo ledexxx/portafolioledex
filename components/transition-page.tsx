@@ -1,14 +1,17 @@
 "use client"
 
 import { transitionVariantsPage } from "@/utils/motion-transition";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 
 const TransitionPage = () => {
+    const reducedMotion = useReducedMotion();
+    if (reducedMotion) return null;
     return (
         <AnimatePresence mode="wait">
             <div>
                 <motion.div
-                    className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#3184f7]"
+                    aria-hidden="true"
+                    className="pointer-events-none fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#3184f7]"
                     variants={transitionVariantsPage}
                     initial="initial"
                     animate="animate"

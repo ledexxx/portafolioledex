@@ -5,7 +5,8 @@ import TransitionPage from "@/components/transition-page";
 export const metadata: Metadata = {
     title: "Política de Privacidad",
     description: "Política de privacidad de Leonel Delgado — LEDEX. Información sobre el tratamiento de datos personales conforme al RGPD.",
-    robots: { index: false, follow: false },
+    alternates: { canonical: "https://www.ledexcorp.site/privacidad" },
+    robots: { index: false, follow: true },
 };
 
 const sections = [

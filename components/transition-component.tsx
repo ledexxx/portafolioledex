@@ -15,7 +15,7 @@ export function MotionTransition(props: MotionTransitionProps) {
     return (
         <motion.div
             variants={fadeIn(position)}
-            initial="hidden"
+            initial={false}
             animate="visible"
             exit="hidden"
             className={className}

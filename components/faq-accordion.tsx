@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react";
 const faqs = [
     {
         q: "¿Cuánto tiempo tarda en verse resultados SEO?",
-        a: "Los primeros resultados medibles suelen aparecer entre 2 y 4 meses. El SEO es una inversión a medio-largo plazo, pero con una base técnica sólida los avances son sostenibles y acumulativos.",
+        a: "Depende del estado del sitio, la competencia y la implementación. Primero defino una línea base y objetivos; después evalúo la evolución. No garantizo posiciones ni un plazo fijo.",
     },
     {
         q: "¿Trabajas con cualquier tipo de negocio?",
@@ -71,6 +71,8 @@ const FaqAccordion = () => {
                             <button
                                 onClick={() => toggle(i)}
                                 aria-expanded={isOpen}
+                                aria-controls={`faq-panel-${i}`}
+                                id={`faq-question-${i}`}
                                 className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
                             >
                                 <span className={`text-sm font-semibold transition-colors duration-300 ${isOpen ? "text-secondary" : "text-white"}`}>
@@ -87,7 +89,7 @@ const FaqAccordion = () => {
                             <div
                                 className={`
                                     overflow-hidden transition-all duration-300 ease-in-out
-                                    ${isOpen ? "max-h-48 opacity-100" : "max-h-0 opacity-0"}
+                                    ${isOpen ? "opacity-100" : "opacity-0"}
                                 `}
                             >
                                 <p className="px-6 pb-5 text-sm text-white/60 leading-relaxed">

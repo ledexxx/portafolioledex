@@ -1,23 +1,12 @@
 import TransitionPage from "@/components/transition-page";
 import FaqAccordion from "@/components/faq-accordion";
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/site";
 import React from 'react';
 import { ChevronDown, CheckCircle, MessageCircle } from 'lucide-react';
 import { servicesData } from '@/data';
 import ServiceCard from '@/components/ServiceCard';
 
-export const metadata: Metadata = {
-    title: "Servicios SEO & Desarrollo Web Freelancer",
-    description:
-        "Servicios de consultoría SEO técnica, desarrollo Front-End y diseño web orientado a la conversión. Auditorías SEO, posicionamiento en Google, WordPress, Shopify y Next.js.",
-    alternates: { canonical: "https://www.ledexcorp.site/services" },
-    openGraph: {
-        title: "Servicios SEO & Desarrollo Web | Leonel Delgado",
-        description:
-            "Consultor SEO freelancer especializado en SEO técnico, desarrollo Front-End y diseño web. Implemento las mejoras directamente en el código.",
-        url: "https://www.ledexcorp.site/services",
-    },
-};
+export const metadata = pageMetadata("Servicios de SEO técnico y desarrollo web", "Auditorías SEO, optimización on-page y desarrollo web con WordPress, Shopify y Next.js. Conoce cómo trabajo y qué puedo aportar a tu proyecto.", "/services");
 
 // ── Proceso de trabajo ─────────────────────────────────────────────
 const proceso = [

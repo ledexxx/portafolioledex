@@ -132,7 +132,7 @@ export const servicesData: Service[] = [
         id: 1,
         title: "Consultoría SEO",
         description:
-            "Posiciono tu sitio en los primeros resultados de Google con estrategia técnica, auditorías profundas y optimización continua que realmente mueve métricas.",
+            "Mejoro la base técnica y el contenido de tu web con auditorías, acciones priorizadas y seguimiento de visibilidad orgánica.",
         icon: "img:https://cdn.simpleicons.org/google/white",
         features: [
             "Auditoría SEO técnica completa",
